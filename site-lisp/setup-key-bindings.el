@@ -48,6 +48,7 @@
 (defalias 'cji 'cider-jack-in)
 (defalias 'sh 'slamhound)
 (defalias 'qr 'quickrun)
+(defalias 'cb 'comment-box)
 
 ;; guide-key
 ;; (require 'guide-key)
