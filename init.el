@@ -131,6 +131,7 @@
 (require 'setup-python)
 
 (require 'setup-key-bindings)
+(require 'setup-eww)
 
 ;;; ido-mode
 ;; (ido-mode t)
