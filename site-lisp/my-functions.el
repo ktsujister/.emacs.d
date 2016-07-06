@@ -62,5 +62,11 @@
 ;    (goto-char
 ;     (+ (point) (cadr (insert-file-contents "/dev/clipboard"))))))
 
+;; http://stackoverflow.com/a/23382008/262750
+(defun display-ansi-colors ()
+  (interactive)
+  (let ((inhibit-read-only t))
+    (ansi-color-apply-on-region (point-min) (point-max))))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'my-functions)
