@@ -8,8 +8,17 @@
 
 (unless window-system (menu-bar-mode -1))
 
-(add-to-list 'load-path
-	     (expand-file-name "site-lisp" user-emacs-directory))
+(let ((base (expand-file-name "site-lisp" user-emacs-directory)))
+  (add-to-list 'load-path base)
+  (dolist (f (directory-files base))
+    (let ((name (concat base "/" f)))
+      (when (and (file-directory-p name)
+                 (not (equal f ".."))
+                 (not (equal f ".")))
+        (add-to-list 'load-path name)
+	(let ((default-directory name))
+	  (normal-top-level-add-subdirs-to-load-path))
+	))))
 (add-to-list 'load-path "~/env/share/emacs/site-lisp/w3m")
 (add-to-list 'load-path "~/env/share/emacs/site-lisp/mew")
 
