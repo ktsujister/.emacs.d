@@ -50,8 +50,7 @@
     ("\\.cs$\\|\\.cpp$\\|\\.c$\\|\\.h$" . c++-mode)
     ("\\.xsd$\\|\\.xml$\\|\\.xsx$" . sgml-mode)
     ("\\.jsp$" . html-mode)
-    ("\\.txt$" . fundamental-mode)
-    ("\\.cljs$" . clojure-mode))
+    ("\\.txt$" . fundamental-mode))
   auto-mode-alist))
 
 ;;; uniquify settings
