@@ -64,7 +64,7 @@
 ;; (el-get-bundle rbenv)
 (el-get-bundle recentf-ext)
 (el-get-bundle s)
-(el-get-bundle slamhound)
+;; (el-get-bundle slamhound)
 (el-get-bundle smartparens)
 (el-get-bundle smex)
 (el-get-bundle use-package)

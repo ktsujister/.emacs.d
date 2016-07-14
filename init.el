@@ -152,7 +152,7 @@
  ;; If there is more than one, they won't work right.
  '(frame-background-mode (quote dark))
  '(org-agenda-files (quote ("~/memo/todo.org")))
- '(package-selected-packages (quote (queue slamhound elixir-mode company))))
+ '(package-selected-packages (quote (queue elixir-mode company))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

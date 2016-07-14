@@ -46,7 +46,6 @@
 (defalias 'git 'magit-status)
 (defalias 'hg 'monky-status)
 (defalias 'cji 'cider-jack-in)
-(defalias 'sh 'slamhound)
 (defalias 'qr 'quickrun)
 (defalias 'cb 'comment-box)
 
