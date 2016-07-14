@@ -85,18 +85,21 @@
 (setq bookmark-save-flag 1) ; save bookmark if changed
 
 (when (require 'recentf nil t)
-  (setq recentf-save-file
-	;; "~/.emacs.d/.recentf"
-	(expand-file-name ".recentf" user-emacs-directory))
+  ;; (setq recentf-save-file
+  ;; 	;; "~/.emacs.d/.recentf"
+  ;; 	(expand-file-name ".recentf" user-emacs-directory))
   (setq recentf-max-saved-items 2000)
-  (setq recentf-exclude '(".recentf"))
-  (setq recentf-auto-cleanup 10)
+  ;; (setq recentf-exclude '(".recentf"))
+  ;; (setq recentf-auto-cleanup 10)
+  (setq recentf-auto-cleanup 'never)
   (setq recentf-auto-cleanup-timer
 	(run-with-idle-timer 30 t 'recentf-save-list))
   (recentf-mode 1)
   (require 'recentf-ext))
 
 ;; desktop
+(setq desktop-globals-to-save '(extended-command-history))
+(setq desktop-files-not-to-save "")
 (desktop-save-mode t)
 (setq desktop-restore-frames nil)
 
