@@ -50,13 +50,13 @@
 
 (setq auto-save-default nil)
 
-(require 'modeline-git-branch)
-(modeline-git-branch-mode 1)
+;; (require 'modeline-git-branch)
+;; (modeline-git-branch-mode 1)
 
 ;; fix for slow emacs when saving files
-(setq vc-handled-backends ())
+;; (setq vc-handled-backends ())
 
-(remove-hook 'find-file-hook 'vc-find-file-hook)
-(remove-hook 'kill-buffer-hook 'vc-kill-buffer-hook)
+;; (remove-hook 'find-file-hook 'vc-find-file-hook)
+;; (remove-hook 'kill-buffer-hook 'vc-kill-buffer-hook)
 
 (provide 'my-defaults)
