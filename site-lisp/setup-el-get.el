@@ -11,13 +11,16 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
+(add-to-list 'el-get-sources '(:name queue :url "https://elpa.gnu.org/packages/queue.html"))
+(add-to-list 'el-get-sources '(:name inflections :url "http://melpa.org/#/inflections"))
+
 ;;; clojure related
 (el-get-bundle clojure-emacs/cider
   :name cider :checkout "v0.13.0")
 (el-get-bundle clojure-emacs/clj-refactor.el
   :name clj-refactor :checkout "2.2.0")
 (el-get-bundle magit/with-editor
-  :name with-editor :checkout "v2.5.0")
+  :name with-editor :checkout "v2.5.5")
 
 ;; (el-get-bundle clj-refactor)
 (el-get-bundle inflections)
