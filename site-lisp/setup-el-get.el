@@ -4,6 +4,7 @@
 ;;   (setq user-emacs-directory (file-name-directory load-file-name)))
 
 (add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
+
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
@@ -33,8 +34,8 @@
 (el-get-bundle cedit)
 
 (el-get-bundle clojure-mode)
-(el-get-bundle company)
-(el-get-bundle company-jedi)
+(el-get-bundle company-mode/company-mode)
+;; (el-get-bundle company)
 (el-get-bundle dash)
 ;; (el-get-bundle drag-stuff)
 (el-get-bundle elixir-lang/emacs-elixir :name elixir-mode)
@@ -81,9 +82,13 @@
 ;; additional
 (el-get-bundle edn)
 (el-get-bundle epc)
-(el-get-bundle jedi-core
-  :type http :url "https://raw.githubusercontent.com/tkf/emacs-jedi/master/jedi-core.el")
 (el-get-bundle python-environment)
+(el-get-bundle tkf/emacs-jedi
+  :load ("jedi-core.el")
+  :name jedi-core
+  :depends (epc python-environment))
+(el-get-bundle company-jedi
+  :depends (company-mode))
 
 (el-get-bundle tarao/el-get-lock)
 (el-get-bundle quickrun)
