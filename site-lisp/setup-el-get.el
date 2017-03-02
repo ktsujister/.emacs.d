@@ -17,7 +17,7 @@
 
 ;;; clojure related
 (el-get-bundle clojure-emacs/cider
-  :name cider :checkout "v0.13.0")
+  :name cider :checkout "v0.14.0")
 (el-get-bundle clojure-emacs/clj-refactor.el
   :name clj-refactor :checkout "2.2.0")
 (el-get-bundle magit/with-editor
