@@ -48,7 +48,7 @@
  (append
   '(("\\.cs$" . csharp-mode)
     ("\\.cs$\\|\\.cpp$\\|\\.c$\\|\\.h$" . c++-mode)
-    ("\\.xsd$\\|\\.xml$\\|\\.xsx$" . sgml-mode)
+    ("\\.xsd$\\|\\.xml$\\|\\.xsx$" . nxml-mode)
     ("\\.jsp$" . html-mode)
     ("\\.txt$" . fundamental-mode))
   auto-mode-alist))
@@ -141,6 +141,7 @@
 
 (require 'setup-key-bindings)
 (require 'setup-eww)
+(require 'setup-xml)
 
 ;;; ido-mode
 ;; (ido-mode t)
