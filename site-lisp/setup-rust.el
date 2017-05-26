@@ -1,4 +1,5 @@
 (add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'rust-mode-hook 'cargo-minor-mode)
 ;; (add-hook 'racer-mode-hook #'eldoc-mode) ;; racer is slow sometimes
 (add-hook 'racer-mode-hook #'company-mode)
 

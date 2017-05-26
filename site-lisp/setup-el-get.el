@@ -96,6 +96,7 @@
 ;; rust
 (el-get-bundle rust-mode)
 (el-get-bundle emacs-racer)
+(el-get-bundle cargo)
 
 (el-get-lock)
 (el-get-lock 'magit 'clj-refactor 'cider)
