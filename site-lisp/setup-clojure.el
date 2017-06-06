@@ -57,6 +57,7 @@
 
 ;; Add custom magic requires.
 (dolist (mapping '(("time" . "clj-time.core")
+		   ("edn" . "clojure.edn")
 		   ("cli" . "clojure.tools.cli")
 		   ("log" . "clojure.tools.logging")
 		   ("t"   . "taoensso.timbre")))
