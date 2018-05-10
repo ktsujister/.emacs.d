@@ -1,0 +1,10 @@
+# key: iff
+# name: check-for-file-existance-and-run-code
+# --
+if [[ ! -f "\${${1:variable_name}}" ]]; then
+    logecho "creating \${$1}"
+    $0
+    logecho "created  \${$1}"
+else
+    logecho "found    \${$1}"
+fi
