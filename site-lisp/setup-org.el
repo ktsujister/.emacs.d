@@ -29,4 +29,14 @@
 (setq calendar-holidays
       (append japanese-holidays holiday-local-holidays holiday-other-holidays))
 
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   ;; (shell . t)
+   (sh . t)
+   (python . t)
+   (ruby . t)
+   (java . t)
+   (R . t)))
+
 (provide 'setup-org)
