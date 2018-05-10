@@ -158,6 +158,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(frame-background-mode (quote dark))
+ '(magit-pull-arguments nil)
  '(org-agenda-files (quote ("~/memo/todo.org")))
  '(package-selected-packages (quote (queue elixir-mode company))))
 
