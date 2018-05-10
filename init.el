@@ -101,8 +101,8 @@
   (recentf-mode 1))
 
 ;; desktop
-(setq desktop-globals-to-save '(extended-command-history))
-(setq desktop-files-not-to-save "")
+;; (setq desktop-globals-to-save '(extended-command-history))
+;; (setq desktop-files-not-to-save "")
 (desktop-save-mode t)
 (setq desktop-restore-frames nil)
 
