@@ -46,7 +46,8 @@
 (setq default-frame-alist initial-frame-alist)
 
 (grep-compute-defaults)
-(grep-apply-setting 'grep-find-command "find . ! -name \"*~\" ! -name \"#*#\" -type f -print0 | xargs -0 -e grep -nH -e ")
+;; (grep-apply-setting 'grep-find-command "find . ! -name \"*~\" ! -name \"#*#\" -type f -print0 | xargs -0 -e grep -nH -e ")
+(grep-apply-setting 'grep-find-command "rg -Hn --no-heading --color=never ")
 
 (setq auto-save-default nil)
 
