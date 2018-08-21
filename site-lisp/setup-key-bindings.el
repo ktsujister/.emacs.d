@@ -36,7 +36,8 @@
 
 
 (global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-xa" 'anything)
+(global-set-key "\C-xb" 'anything-mini)
+(global-set-key "\C-xa" 'my-anything)
 (global-set-key "\C-xc" 'compile)
 
 (global-set-key "\C-c\C-i" 'company-complete)

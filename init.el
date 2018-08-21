@@ -112,21 +112,7 @@
       (winner-mode 1))
 (windmove-default-keybindings)
 
-;; anything
-;; (require 'anything)
-(require 'anything-startup)
-;; (require 'anything-config)
-(setq anything-c-locate-command "locate -l 20 -e -b -i -r %s")
-(setq anything-sources (list anything-c-source-buffers
-                             anything-c-source-bookmarks
-			     anything-c-source-files-in-current-dir
-                             anything-c-source-recentf
-                             anything-c-source-file-name-history
-                             ;; anything-c-source-locate
-			     anything-c-source-man-pages))
-(define-key anything-map "\C-\M-p" 'anything-previous-source)
-(define-key anything-map "\C-\M-n" 'anything-next-source)
-
+(require 'setup-anything)
 (require 'setup-popwin)
 
 (setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")
