@@ -5,7 +5,9 @@
   (popwin-mode 1)
   (setq popwin:popup-window-height 0.4)
   (setq anything-samewindow nil)
-  (push '("*anything*" :height 20) popwin:special-display-config)
+  (push '("*my-anything*") popwin:special-display-config)
+  ;; (push '("*my-anything*" :height 20) popwin:special-display-config)
+  ;; (push '("*anything mini*" :height 20) popwin:special-display-config)
   (push '("*Warnings*" :height 20) popwin:special-display-config)
   (push '(dired-mode :position top) popwin:special-display-config)
   ;; (push '("anything" :regexp t :height 0.5) popwin:special-display-config)
@@ -15,7 +17,8 @@
   (push '("*Completions*" :height 0.5) popwin:special-display-config)
   (push '("*compilation*" :height 0.5) popwin:special-display-config)
   (push '("*magit-edit-log*" :height 0.5) popwin:special-display-config)
-
+  ;; M-!
+  (push "*Shell Command Output*" popwin:special-display-config)
   (push '("*quickrun*") popwin:special-display-config)
   (push '("*Org Agenda*") popwin:special-display-config)
   (push '("*Help*") popwin:special-display-config)
