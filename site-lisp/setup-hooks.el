@@ -71,6 +71,17 @@
       (ansi-color-apply-on-region compilation-filter-start (point-max))))
   (add-hook 'compilation-filter-hook 'my-colorize-compilation-buffer))
 
+;; https://stackoverflow.com/a/18317181/262750
+(defun my-find-file-check-make-large-file-read-only-hook ()
+  "If a file is over a given size, make the buffer read only."
+  (when (> (buffer-size) (* 1024 1024))
+    (setq buffer-read-only t)
+    (buffer-disable-undo)
+    (linum-mode -1)
+    (font-lock-mode -1)
+    (fundamental-mode)))
+(add-hook 'find-file-hook 'my-find-file-check-make-large-file-read-only-hook)
+
 ;; DEL		paredit-backward-delete
 
 (provide 'setup-hooks)
