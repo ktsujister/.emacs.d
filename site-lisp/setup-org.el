@@ -32,8 +32,8 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '(
-   ;; (shell . t)
-   (sh . t)
+   (shell . t)
+   ;; (sh . t)
    (python . t)
    (ruby . t)
    (java . t)
