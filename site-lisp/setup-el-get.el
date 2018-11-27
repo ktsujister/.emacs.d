@@ -12,18 +12,24 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(add-to-list 'el-get-sources '(:name queue :url "https://elpa.gnu.org/packages/queue.html"))
-(add-to-list 'el-get-sources '(:name inflections :url "http://melpa.org/#/inflections"))
+;; (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+;; (el-get 'sync)
+
+(el-get-bundle queue)
 
 ;;; clojure related
 ;; (el-get-bundle clojure-emacs/cider
 ;;   :name cider :checkout "v0.15.0")
+(el-get-bundle clojure-emacs/clojure-mode
+  :name clojure-mode :checkout "5.9.1")
 (el-get-bundle clojure-emacs/cider
-  :name cider :checkout "v0.15.1")
+  :name cider :checkout "v0.18.0")
 (el-get-bundle clojure-emacs/clj-refactor.el
-  :name clj-refactor :checkout "2.3.1")
-(el-get-bundle magit/with-editor
-  :name with-editor :checkout "v2.5.5")
+  :name clj-refactor :checkout "2.4.0")
+
+(el-get-bundle with-editor)
+;; (el-get-bundle magit/with-editor
+;;   :name with-editor :checkout "v2.5.5")
 
 ;; (el-get-bundle clj-refactor)
 (el-get-bundle inflections)
@@ -35,13 +41,13 @@
 ;; (el-get-bundle bind-key)
 (el-get-bundle cedit)
 
-(el-get-bundle clojure-mode)
+;; (el-get-bundle clojure-mode)
 (el-get-bundle company-mode/company-mode)
 ;; (el-get-bundle company)
 (el-get-bundle dash)
 ;; (el-get-bundle drag-stuff)
 (el-get-bundle elixir-lang/emacs-elixir :name elixir-mode)
-(el-get-bundle ess :build ("cd lisp && make && cd .. && cd etc && make"))
+;; (el-get-bundle ess :build ("cd lisp && make && cd .. && cd etc && make"))
 (el-get-bundle exec-path-from-shell)
 ;; (el-get-bundle expand-region)
 (el-get-bundle f)
@@ -80,6 +86,7 @@
 ;; gnu
 (el-get-bundle queue)
 (el-get-bundle spinner)
+(el-get-bundle vspinu/sesman)
 
 ;; additional
 (el-get-bundle edn)
@@ -97,11 +104,11 @@
 
 ;; rust
 (el-get-bundle rust-mode)
-(el-get-bundle emacs-racer)
+;; (el-get-bundle emacs-racer)
 (el-get-bundle cargo)
 
 ;; (el-get-bundle groovy-emacs-mode)
 
 (el-get-lock)
-(el-get-lock 'magit 'clj-refactor 'cider)
+(el-get-lock 'magit 'clj-refactor 'cider 'clojure-mode)
 (provide 'setup-el-get)
