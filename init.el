@@ -38,8 +38,9 @@
 (require 'setup-rust)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
-(load-theme 'solarized t)
-(setq solarized-termcolors 256)
+;; (load-theme 'solarized t)
+;; (add-hook 'after-init-hook (lambda () (load-theme 'solarized)))
+;; (setq solarized-termcolors 256)
 
 (require 'setup-hooks)
 (require 'my-functions)
@@ -104,7 +105,7 @@
 ;; desktop
 ;; (setq desktop-globals-to-save '(extended-command-history))
 ;; (setq desktop-files-not-to-save "")
-(desktop-save-mode t)
+;; (desktop-save-mode t)
 (setq desktop-restore-frames nil)
 
 ;; winner-mode
@@ -119,7 +120,7 @@
 
 ;; (global-eldoc-mode -1) ;; disable eldoc globally
 
-(require 'setup-ess)
+;; (require 'setup-ess)
 (global-company-mode)
 (setq company-idle-delay nil) ;; no auto complete
 ;; (setq company-minimum-prefix-length 100)
@@ -144,6 +145,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (solarized)))
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(frame-background-mode (quote dark))
  '(magit-pull-arguments nil)
  '(org-agenda-files (quote ("~/memo/todo.org")))
