@@ -34,7 +34,6 @@
 ;; (global-set-key "\M-m" 'fastnav-mark-to-char-forward)
 ;; (global-set-key "\M-M" 'fastnav-mark-to-char-backward)
 
-
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-xb" 'anything-mini)
 (global-set-key "\C-xa" 'my-anything)
@@ -45,7 +44,7 @@
 ;;; aliases
 (defalias 'rof 'recentf-open-files)
 (defalias 'git 'magit-status)
-(defalias 'hg 'monky-status)
+;; (defalias 'hg 'monky-status)
 (defalias 'cji 'cider-jack-in)
 (defalias 'qr 'quickrun)
 (defalias 'cb 'comment-box)
