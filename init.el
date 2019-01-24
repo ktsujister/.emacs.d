@@ -102,15 +102,11 @@
   (setq recentf-auto-cleanup-timer (run-with-idle-timer 60 t 'recentf-save-list))
   (recentf-mode 1))
 
-;; desktop
-;; (setq desktop-globals-to-save '(extended-command-history))
-;; (setq desktop-files-not-to-save "")
-;; (desktop-save-mode t)
-(setq desktop-restore-frames nil)
+(require 'setup-desktop)
 
 ;; winner-mode
 (when (fboundp 'winner-mode)
-      (winner-mode 1))
+  (winner-mode 1))
 (windmove-default-keybindings)
 
 (require 'setup-anything)
