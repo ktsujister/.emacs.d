@@ -52,6 +52,7 @@
 (setq cider-repl-pop-to-buffer-on-connect 'display-only)
 (setq cider-pprint-fn 'fipp)
 (setq cider-eval-result-prefix ";; => ")
+(setq cider-test-show-report-on-success t)
 
 (require 'clj-refactor)
 
