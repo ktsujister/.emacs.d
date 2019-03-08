@@ -21,9 +21,9 @@
 ;; (el-get-bundle clojure-emacs/cider
 ;;   :name cider :checkout "v0.15.0")
 (el-get-bundle clojure-emacs/clojure-mode
-  :name clojure-mode :checkout "5.9.1")
+  :name clojure-mode :checkout "5.10.0")
 (el-get-bundle clojure-emacs/cider
-  :name cider :checkout "v0.20.0")
+  :name cider :checkout "v0.21.0")
 (el-get-bundle clojure-emacs/clj-refactor.el
   :name clj-refactor :checkout "2.4.0")
 
