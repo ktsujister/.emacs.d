@@ -43,6 +43,10 @@
 (add-hook
  'after-recentf-add-file-hook
  'recentf-save-list)
+(add-hook
+ 'sh-mode-hook
+ '(lambda ()
+    (yas-minor-mode 1)))
 
 (add-hook
  'sh-mode-hook
