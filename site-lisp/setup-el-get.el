@@ -104,7 +104,7 @@
 
 ;; rust
 (el-get-bundle rust-mode)
-;; (el-get-bundle emacs-racer)
+(el-get-bundle emacs-racer)
 (el-get-bundle cargo)
 
 ;; (el-get-bundle groovy-emacs-mode)
