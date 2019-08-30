@@ -40,7 +40,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;; (load-theme 'solarized t)
 ;; (add-hook 'after-init-hook (lambda () (load-theme 'solarized)))
-;; (setq solarized-termcolors 256)
+(setq solarized-termcolors 256)
 
 (require 'setup-hooks)
 (require 'my-functions)
@@ -132,6 +132,8 @@
 (require 'setup-key-bindings)
 (require 'setup-eww)
 (require 'setup-xml)
+
+(yas-reload-all)
 
 ;;; ido-mode
 ;; (ido-mode t)
