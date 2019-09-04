@@ -101,6 +101,7 @@
 
 (el-get-bundle tarao/el-get-lock)
 (el-get-bundle quickrun)
+(el-get-bundle rotate)
 
 ;; rust
 (el-get-bundle rust-mode)
