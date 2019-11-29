@@ -22,6 +22,7 @@
 ;; (add-to-list 'load-path "~/env/share/emacs/site-lisp/w3m")
 (add-to-list 'load-path "~/env/share/emacs/site-lisp/mew")
 
+(require 'setup-evil)
 (require 'setup-el-get)
 ;; (package-initialize)
 
