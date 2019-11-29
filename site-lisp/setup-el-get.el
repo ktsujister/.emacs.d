@@ -43,6 +43,7 @@
 
 ;; (el-get-bundle clojure-mode)
 (el-get-bundle company-mode/company-mode)
+;; (el-get-bundle parseedn)
 ;; (el-get-bundle company)
 (el-get-bundle dash)
 ;; (el-get-bundle drag-stuff)
@@ -107,6 +108,8 @@
 (el-get-bundle rust-mode)
 (el-get-bundle emacs-racer)
 (el-get-bundle cargo)
+
+(el-get-bundle evil)
 
 ;; (el-get-bundle groovy-emacs-mode)
 
