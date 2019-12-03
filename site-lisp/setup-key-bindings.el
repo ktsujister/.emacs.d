@@ -2,7 +2,7 @@
 (global-set-key [f1] 'help-for-help)
 (global-set-key [f2] 'eshell)
 (global-set-key [f3] 'mew)
-(global-set-key [f4] 'evil-mode)
+(global-set-key [f4] 'evil-local-mode)
 ;; (global-set-key [f5] 'auto-fill-mode)
 (global-set-key [f6] 'my-count-words)
 ;; (global-set-key [f7] 'slime-repl)
