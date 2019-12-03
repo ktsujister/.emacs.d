@@ -46,7 +46,8 @@
 (add-hook
  'sh-mode-hook
  '(lambda ()
-    (yas-minor-mode 1)))
+    (yas-minor-mode 1)
+    (evil-local-mode)))
 
 (add-hook
  'sh-mode-hook
