@@ -14,7 +14,8 @@
     (local-set-key "\C-h" 'paredit-backward-delete)
     (clj-refactor-mode 1)
     (yas-minor-mode 1) ; for adding require/use/import
-    (cljr-add-keybindings-with-prefix "C-c C-m")))
+    (cljr-add-keybindings-with-prefix "C-c C-m")
+    (evil-local-mode)))
 
 (add-hook
  'cider-repl-mode-hook
@@ -27,7 +28,8 @@
     ;; (local-set-key "\C-c{" 'paredit-backward-barf-sexp)
     (local-set-key "\C-h" 'paredit-backward-delete)
     (setq cider-repl-use-pretty-printing t)
-    (setq cider-repl-print-length 100)))
+    (setq cider-repl-print-length 100)
+    (evil-local-mode)))
 (add-hook
  'cider-popup-buffer-mode-hook
  '(lambda ()
@@ -50,7 +52,7 @@
 ;; (add-hook 'cider-interaction-mode-hook 'cider-turn-on-eldoc-mode)
 (setq cider-repl-display-help-banner nil)
 (setq cider-repl-pop-to-buffer-on-connect 'display-only)
-(setq cider-pprint-fn 'fipp)
+(setq cider-print-fn 'fipp)
 (setq cider-eval-result-prefix ";; => ")
 (setq cider-test-show-report-on-success t)
 
