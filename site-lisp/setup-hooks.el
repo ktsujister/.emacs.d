@@ -29,12 +29,14 @@
  'js-mode-hook
  '(lambda ()
     (setq tab-width 4)
-    (setq show-trailing-whitespace t)))
+    (setq show-trailing-whitespace t)
+    (turn-on-evil-mode-fixed-escape)))
 (add-hook
  'emacs-lisp-mode-hook
  '(lambda ()
     (paredit-mode 1)
-    (highlight-parentheses-mode)))
+    (highlight-parentheses-mode)
+    (turn-on-evil-mode-fixed-escape)))
 (add-hook
  'slime-repl-mode-hook
  '(lambda ()
@@ -47,7 +49,10 @@
  'sh-mode-hook
  '(lambda ()
     (yas-minor-mode 1)
-    (evil-local-mode)))
+    (turn-on-evil-mode-fixed-escape)))
+(add-hook 'conf-toml-mode-hook 'turn-on-evil-mode-fixed-escape)
+(add-hook 'java-mode-hook 'turn-on-evil-mode-fixed-escape)
+(add-hook 'yaml-mode-hook 'turn-on-evil-mode-fixed-escape)
 
 (add-hook
  'sh-mode-hook

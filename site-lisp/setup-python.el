@@ -30,7 +30,7 @@
 	    ;; (local-set-key "\C-c\C-dd" 'py-help-at-point)
 	    ;; (define-key python-mode-map (kbd "TAB") 'py-indent-line)
 	    ;; (define-key py-ipython-shell-mode-map (kbd "TAB") 'py-indent-line)
-	    ))
+	    (turn-on-evil-mode-fixed-escape)))
 
 ;; (setq py-complete-function nil)
 ;; (add-hook 'py-ipython-shell-mode-hook

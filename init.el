@@ -53,6 +53,7 @@
     ("\\.cs$\\|\\.cpp$\\|\\.c$\\|\\.h$" . c++-mode)
     ("\\.xsd$\\|\\.xml$\\|\\.xsx$" . nxml-mode)
     ("\\.jsp$" . html-mode)
+    ("\\.yaml$" . yaml-mode)
     ("\\.txt$" . fundamental-mode))
   auto-mode-alist))
 

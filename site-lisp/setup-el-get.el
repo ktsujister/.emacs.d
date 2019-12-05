@@ -110,6 +110,10 @@
 (el-get-bundle cargo)
 
 (el-get-bundle evil)
+(el-get-bundle evil-numbers)
+;; (el-get-bundle org-evil)
+
+(el-get-bundle yoshiki/yaml-mode)
 
 ;; (el-get-bundle groovy-emacs-mode)
 
