@@ -3,7 +3,7 @@
 (global-set-key [f2] 'eshell)
 (global-set-key [f3] 'mew)
 (global-set-key [f4] 'toggle-evil-local-mode)
-;; (global-set-key [f5] 'auto-fill-mode)
+(global-set-key [f5] 'toggle-truncate-lines)
 (global-set-key [f6] 'my-count-words)
 ;; (global-set-key [f7] 'slime-repl)
 (global-set-key [f7] 'cider-switch-to-repl-buffer)
