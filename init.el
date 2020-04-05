@@ -25,6 +25,22 @@
 (require 'setup-evil)
 (require 'setup-el-get)
 ;; (package-initialize)
+;; evil-mode
+(evil-mode 1)
+;; normal state
+(add-to-list 'evil-normal-state-modes '(clojure-mode
+					js-mode
+					emacs-lisp-mode
+					java-mode
+					sh-mode
+					conf-toml-mode
+					yaml-mode
+					c-mode
+					python-mode
+					markdown-mode
+					rust-mode))
+;; insert state
+(add-to-list 'evil-insert-state-modes 'clojure-repl-mode)
 
 ;; Enable my preferred defaults
 (require 'my-defaults)

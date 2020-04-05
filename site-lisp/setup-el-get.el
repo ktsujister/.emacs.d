@@ -109,7 +109,7 @@
 (el-get-bundle emacs-racer)
 (el-get-bundle cargo)
 
-(el-get-bundle evil)
+(el-get-bundle evil :build (("make")) :info nil)
 (el-get-bundle evil-numbers)
 ;; (el-get-bundle org-evil)
 

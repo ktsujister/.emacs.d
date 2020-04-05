@@ -6,6 +6,8 @@
       evil-want-C-u-scroll t
       evil-want-fine-undo t)
 
+(setq evil-default-state 'emacs)
+
 (defun turn-on-evil-mode-fixed-escape ()
   "Turn on Evil in the current buffer AND `evil-esc-mode'. This makes C-[ work
 like <escape> when using `evil-local-mode'."

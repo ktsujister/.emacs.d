@@ -15,7 +15,8 @@
     (clj-refactor-mode 1)
     (yas-minor-mode 1) ; for adding require/use/import
     (cljr-add-keybindings-with-prefix "C-c C-m")
-    (turn-on-evil-mode-fixed-escape)))
+    ;;(turn-on-evil-mode-fixed-escape)
+    ))
 
 (add-hook
  'cider-repl-mode-hook
@@ -29,7 +30,8 @@
     (local-set-key "\C-h" 'paredit-backward-delete)
     (setq cider-repl-use-pretty-printing t)
     (setq cider-repl-print-length 100)
-    (turn-on-evil-mode-fixed-escape)))
+    ;;(turn-on-evil-mode-fixed-escape)
+    ))
 (add-hook
  'cider-popup-buffer-mode-hook
  '(lambda ()
