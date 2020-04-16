@@ -1,13 +1,3 @@
-;; https://stackoverflow.com/questions/41389571/c-does-not-escape-from-insert-mode-in-evil-local-mode
-
-(setq evil-cross-lines t
-      evil-search-module 'evil-search
-      evil-ex-search-vim-style-regexp t
-      evil-want-C-u-scroll t
-      evil-want-fine-undo t)
-
-(setq evil-default-state 'emacs)
-
 (defun turn-on-evil-mode-fixed-escape ()
   "Turn on Evil in the current buffer AND `evil-esc-mode'. This makes C-[ work
 like <escape> when using `evil-local-mode'."
@@ -22,5 +12,28 @@ like <escape> when using `evil-local-mode'."
     (turn-off-evil-mode)
   (turn-on-evil-mode-fixed-escape)))
 
-;; (evil-esc-mode 1)
+(setq evil-default-state 'emacs)
+
+;; normal state
+(dolist (mode '(clojure-mode
+		rust-mode
+		python-mode
+		sh-mode
+		js-mode
+		emacs-lisp-mode
+		java-mode
+		conf-toml-mode
+		yaml-mode
+		markdown-mode
+		c-mode
+		c++-mode
+		make-mode))
+  (add-to-list 'evil-normal-state-modes mode))
+
+;; insert state
+(add-to-list 'evil-insert-state-modes 'cider-repl-mode)
+
+;; turn on evil-mode
+(evil-mode 1)
+
 (provide 'setup-evil)

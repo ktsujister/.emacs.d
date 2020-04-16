@@ -60,4 +60,12 @@
 ;; (remove-hook 'find-file-hook 'vc-find-file-hook)
 ;; (remove-hook 'kill-buffer-hook 'vc-kill-buffer-hook)
 
+;; evil-mode related. this needs to be set before (require 'evil)
+;; https://stackoverflow.com/questions/41389571/c-does-not-escape-from-insert-mode-in-evil-local-mode
+(setq evil-cross-lines t
+      evil-search-module 'evil-search
+      evil-ex-search-vim-style-regexp t
+      evil-want-C-u-scroll t
+      evil-want-fine-undo t)
+
 (provide 'my-defaults)
