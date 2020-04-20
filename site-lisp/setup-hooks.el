@@ -2,57 +2,57 @@
 
 (add-hook
  'html-mode-hook
- '(lambda ()
-    (setq tab-width 4)
-    (setq show-trailing-whitespace t)))
+ (lambda ()
+   (setq tab-width 4)
+   (setq show-trailing-whitespace t)))
 (add-hook
  'sql-mode-hook
- '(lambda ()
-    (setq tab-width 4)
-    (setq show-trailing-whitespace t)))
+ (lambda ()
+   (setq tab-width 4)
+   (setq show-trailing-whitespace t)))
 (add-hook
  'java-mode-hook
- '(lambda ()
-    (setq tab-width 4)
-    (setq show-trailing-whitespace t)))
+ (lambda ()
+   (setq tab-width 4)
+   (setq show-trailing-whitespace t)))
 (add-hook
  'ruby-mode-hook
- '(lambda ()
-    (setq tab-width 4)
-    (setq show-trailing-whitespace t)))
+ (lambda ()
+   (setq tab-width 4)
+   (setq show-trailing-whitespace t)))
 (add-hook
  'org-mode-hook
- '(lambda ()
-    (setq tab-width 4)
-    (setq show-trailing-whitespace t)))
+ (lambda ()
+   (setq tab-width 4)
+   (setq show-trailing-whitespace t)))
 (add-hook
  'js-mode-hook
- '(lambda ()
-    (setq tab-width 4)
-    (setq show-trailing-whitespace t)
-    ;;(turn-on-evil-mode-fixed-escape)
-    ))
+ (lambda ()
+   (setq tab-width 4)
+   (setq show-trailing-whitespace t)
+   ;;(turn-on-evil-mode-fixed-escape)
+   ))
 (add-hook
  'emacs-lisp-mode-hook
- '(lambda ()
-    (paredit-mode 1)
-    (highlight-parentheses-mode)
-    ;;(turn-on-evil-mode-fixed-escape)
-    ))
+ (lambda ()
+   (paredit-mode 1)
+   (highlight-parentheses-mode)
+   ;;(turn-on-evil-mode-fixed-escape)
+   ))
 (add-hook
  'slime-repl-mode-hook
- '(lambda ()
-    (paredit-mode 1)
-    (highlight-parentheses-mode)))
+ (lambda ()
+   (paredit-mode 1)
+   (highlight-parentheses-mode)))
 (add-hook
  'after-recentf-add-file-hook
  'recentf-save-list)
 (add-hook
  'sh-mode-hook
- '(lambda ()
-    (yas-minor-mode 1)
-    ;;(turn-on-evil-mode-fixed-escape)
-    ))
+ (lambda ()
+   (yas-minor-mode 1)
+   ;;(turn-on-evil-mode-fixed-escape)
+   ))
 ;;(add-hook 'conf-toml-mode-hook 'turn-on-evil-mode-fixed-escape)
 ;;(add-hook 'java-mode-hook 'turn-on-evil-mode-fixed-escape)
 ;;(add-hook 'yaml-mode-hook 'turn-on-evil-mode-fixed-escape)
@@ -75,6 +75,12 @@
  (lambda ()
    ;; remove keybinding for magit-add-change-log-entry for anything
    (define-key magit-log-mode-map "\C-xa" nil)))
+
+(add-hook
+ 'emacs-startup-hook
+ (lambda ()
+   (switch-to-buffer (get-buffer-create "*scratch*"))
+   (delete-other-windows)) t)
 
 ;; http://stackoverflow.com/a/20788623/262750
 (ignore-errors
