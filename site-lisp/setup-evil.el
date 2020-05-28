@@ -34,7 +34,7 @@
 (dolist (mode '(org-mode
 		magit-mode
 		mew-summary-mode
-		))
+		mew-virtual-mode))
   (add-to-list 'evil-emacs-state-modes mode))
 
 ;; insert state
