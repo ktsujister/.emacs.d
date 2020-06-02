@@ -32,9 +32,6 @@
 
 (require 'cl-lib)
 
-;; ;; Install packages
-;; (require 'setup-packages)
-
 ;; (setq rbenv-modeline-function 'rbenv--modeline-plain)
 
 (require 'setup-clojure)
@@ -156,7 +153,7 @@
  '(frame-background-mode (quote dark))
  '(magit-pull-arguments nil)
  '(org-agenda-files (quote ("~/memo/todo.org")))
- '(package-selected-packages (quote (queue elixir-mode company))))
+ '(package-selected-packages (quote ( company))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
