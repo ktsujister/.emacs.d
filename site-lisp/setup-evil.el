@@ -31,7 +31,8 @@
 ;;   (add-to-list 'evil-normal-state-modes mode))
 
 ;; emacs state
-(dolist (mode '(org-mode
+(dolist (mode '(dired-mode
+		org-mode
 		magit-mode
 		mew-summary-mode
 		mew-virtual-mode))
