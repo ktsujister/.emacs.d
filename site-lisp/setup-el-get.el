@@ -15,7 +15,8 @@
 ;; (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 ;; (el-get 'sync)
 
-(el-get-bundle queue)
+;; (el-get-bundle queue)
+(el-get-bundle emacs-straight/queue)
 
 ;;; clojure related
 ;; (el-get-bundle clojure-emacs/cider
@@ -37,7 +38,8 @@
 
 ;;; others
 (el-get-bundle alchemist)
-(el-get-bundle anything)
+;; (el-get-bundle anything)
+(el-get-bundle emacs-jp/anything)
 ;; (el-get-bundle bind-key)
 (el-get-bundle cedit)
 
@@ -85,7 +87,7 @@
 (el-get-bundle yasnippet)
 
 ;; gnu
-(el-get-bundle queue)
+;; (el-get-bundle queue)
 (el-get-bundle spinner)
 (el-get-bundle vspinu/sesman)
 
