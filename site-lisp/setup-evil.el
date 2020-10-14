@@ -36,6 +36,8 @@
 		magit-mode
 		mew-summary-mode
 		mew-virtual-mode
+		mew-message-mode
+		mew-draft-mode
 		term-mode))
   (add-to-list 'evil-emacs-state-modes mode))
 
