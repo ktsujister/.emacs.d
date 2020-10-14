@@ -1,7 +1,7 @@
 ;; anything
 ;; (require 'anything)
-(require 'anything-startup)
-;; (require 'anything-config)
+;; (require 'anything-startup)
+(require 'anything-config)
 ;; (setq anything-c-locate-command "locate -l 20 -e -b -i -r %s")
 ;; (setq anything-sources (list anything-c-source-buffers
 ;;                              anything-c-source-bookmarks
