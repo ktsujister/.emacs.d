@@ -35,7 +35,8 @@
 		org-mode
 		magit-mode
 		mew-summary-mode
-		mew-virtual-mode))
+		mew-virtual-mode
+		term-mode))
   (add-to-list 'evil-emacs-state-modes mode))
 
 ;; insert state
