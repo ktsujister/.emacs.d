@@ -22,19 +22,19 @@
 ;; (el-get-bundle clojure-emacs/cider
 ;;   :name cider :checkout "v0.15.0")
 (el-get-bundle clojure-emacs/clojure-mode
-  :name clojure-mode :checkout "5.11.0")
+  :name clojure-mode :checkout "5.12.0")
 (el-get-bundle clojure-emacs/cider
-  :name cider :checkout "v0.21.0")
-(el-get-bundle clojure-emacs/clj-refactor.el
-  :name clj-refactor :checkout "2.4.0")
+  :name cider :checkout "v0.26.1")
+;; (el-get-bundle clojure-emacs/clj-refactor.el
+;;   :name clj-refactor :checkout "2.5.0")
 
 (el-get-bundle with-editor)
 ;; (el-get-bundle magit/with-editor
 ;;   :name with-editor :checkout "v2.5.5")
 
-;; (el-get-bundle clj-refactor)
-(el-get-bundle inflections)
+(el-get-bundle melpa:inflections)
 (el-get-bundle hydra)
+(el-get-bundle clj-refactor)
 
 ;;; others
 (el-get-bundle alchemist)
@@ -54,7 +54,6 @@
 (el-get-bundle exec-path-from-shell)
 ;; (el-get-bundle expand-region)
 (el-get-bundle f)
-(el-get-bundle inflections)
 (el-get-bundle fastnav)
 (el-get-bundle flycheck)
 (el-get-bundle gist)
