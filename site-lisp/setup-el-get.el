@@ -108,7 +108,8 @@
 
 ;; rust
 (el-get-bundle rust-mode)
-(el-get-bundle emacs-racer)
+(el-get-bundle racer-rust/racer :name rust-racer :checkout "v2.1.40")
+(el-get-bundle racer-rust/emacs-racer)
 (el-get-bundle cargo)
 
 (el-get-bundle evil :build (("make")) :info nil)
