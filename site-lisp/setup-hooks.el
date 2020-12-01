@@ -47,6 +47,8 @@
 (add-hook
  'after-recentf-add-file-hook
  'recentf-save-list)
+(require 'yasnippet)
+(yas-reload-all)
 (add-hook
  'sh-mode-hook
  (lambda ()

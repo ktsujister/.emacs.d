@@ -136,8 +136,6 @@
 (require 'setup-eww)
 (require 'setup-xml)
 
-(yas-reload-all)
-
 ;;; ido-mode
 ;; (ido-mode t)
 
