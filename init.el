@@ -21,6 +21,7 @@
 	))))
 ;; (add-to-list 'load-path "~/env/share/emacs/site-lisp/w3m")
 (add-to-list 'load-path "~/env/share/emacs/site-lisp/mew")
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 ;; Enable my preferred defaults
 (require 'my-defaults)
