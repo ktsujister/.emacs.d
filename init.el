@@ -89,7 +89,7 @@
 ;	     (inf-ruby-keys)))
 
 ;; (require 'highlight-parentheses)
-(setq hl-paren-colors
+(setq highlight-parentheses-colors
       '("red1" "yellow1" "green1" "blue1" "magenta1" "purple1"))
 
 ;;; bookmarks
