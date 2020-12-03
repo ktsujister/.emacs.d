@@ -3,7 +3,7 @@
 ;; (when load-file-name
 ;;   (setq user-emacs-directory (file-name-directory load-file-name)))
 
-(add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
@@ -12,7 +12,7 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-;; (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 ;; (el-get 'sync)
 
 ;; (el-get-bundle queue)
@@ -32,7 +32,8 @@
 ;; (el-get-bundle magit/with-editor
 ;;   :name with-editor :checkout "v2.5.5")
 
-(el-get-bundle melpa:inflections)
+;; (el-get-bundle melpa:inflections)
+(el-get-bundle elpa:inflections)
 (el-get-bundle hydra)
 (el-get-bundle clj-refactor)
 
@@ -121,5 +122,8 @@
 ;; (el-get-bundle groovy-emacs-mode)
 
 (el-get-lock)
-(el-get-lock 'magit 'clj-refactor 'cider 'clojure-mode)
+(el-get-lock 'cider 'clojure-mode)
+
+(el-get 'sync)
+
 (provide 'setup-el-get)
