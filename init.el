@@ -145,14 +145,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (solarized)))
+ '(custom-enabled-themes '(solarized))
  '(custom-safe-themes
-   (quote
-    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
- '(frame-background-mode (quote dark))
+   '("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default))
+ '(frame-background-mode 'dark)
  '(magit-pull-arguments nil)
- '(org-agenda-files (quote ("~/memo/todo.org")))
- '(package-selected-packages (quote ( company))))
+ '(org-agenda-files '("~/memo/todo.org"))
+ '(package-selected-packages nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
