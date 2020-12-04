@@ -1,11 +1,7 @@
-;; http://d.hatena.ne.jp/tarao/20150221/1424518030
-
-;; (when load-file-name
-;;   (setq user-emacs-directory (file-name-directory load-file-name)))
-
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
+  (setq gnutls-algorithm-priority "NORMAL")
   (with-current-buffer
       (url-retrieve-synchronously
        "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
@@ -13,7 +9,6 @@
     (eval-print-last-sexp)))
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
-;; (el-get 'sync)
 
 ;; (el-get-bundle queue)
 (el-get-bundle emacs-straight/queue)
@@ -28,12 +23,13 @@
 ;; (el-get-bundle clojure-emacs/clj-refactor.el
 ;;   :name clj-refactor :checkout "2.5.0")
 
-(el-get-bundle with-editor)
+(el-get-bundle magit/with-editor)
+;; (el-get-bundle with-editor)
 ;; (el-get-bundle magit/with-editor
 ;;   :name with-editor :checkout "v2.5.5")
 
-;; (el-get-bundle melpa:inflections)
-(el-get-bundle elpa:inflections)
+;; (el-get-bundle elpa:inflections)
+(el-get-bundle eschulte/jump.el :name inflections)
 (el-get-bundle hydra)
 (el-get-bundle clj-refactor)
 
