@@ -115,6 +115,8 @@
 (el-get-bundle yoshiki/yaml-mode)
 (el-get-bundle terraform-mode)
 
+(el-get-bundle powerline)
+
 ;; (el-get-bundle groovy-emacs-mode)
 
 (el-get-lock)

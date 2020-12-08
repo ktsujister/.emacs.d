@@ -135,6 +135,7 @@
 (require 'setup-key-bindings)
 (require 'setup-eww)
 (require 'setup-xml)
+(require 'setup-powerline)
 
 ;;; ido-mode
 ;; (ido-mode t)
