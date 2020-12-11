@@ -44,6 +44,14 @@
 ;; insert state
 (add-to-list 'evil-insert-state-modes 'cider-repl-mode)
 
+;; (setq evil-emacs-state-cursor '("green" box))
+;; (setq evil-motion-state-cursor '("orange" box))
+;; (setq evil-normal-state-cursor '("yellow" box))
+;; (setq evil-visual-state-cursor '("blue" box))
+;; (setq evil-insert-state-cursor '("purple" (bar . 2)))
+;; (setq evil-replace-state-cursor '("red" bar))
+;; (setq evil-operator-state-cursor '("red" bar))
+
 ;; turn on evil-mode
 (evil-mode 1)
 

@@ -116,6 +116,7 @@
 (el-get-bundle terraform-mode)
 
 (el-get-bundle powerline)
+(el-get-bundle powerline-evil)
 
 ;; (el-get-bundle groovy-emacs-mode)
 
