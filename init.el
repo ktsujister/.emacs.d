@@ -158,5 +158,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-lock-comment-delimiter-face ((t (:foreground "magenta" :slant italic))))
- '(font-lock-comment-face ((t (:foreground "magenta" :slant italic)))))
+ '(font-lock-comment-delimiter-face ((t (:foreground "magenta"))))
+ '(font-lock-comment-face ((t (:foreground "magenta"))))
+ '(powerline-evil-base-face ((t (:foreground "black" :inherit mode-line))))
+ '(powerline-evil-emacs-face ((t (:foreground "violet" :inherit powerline-evil-base-face))))
+ '(powerline-evil-insert-face ((t (:foreground "blue" :inherit powerline-evil-base-face))))
+ '(powerline-evil-normal-face ((t (:foreground "green" :inherit powerline-evil-base-face))))
+ '(powerline-evil-motion-face ((t (:foreground "magenta" :inherit powerline-evil-base-face))))
+ )
