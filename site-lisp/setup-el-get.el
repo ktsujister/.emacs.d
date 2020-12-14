@@ -70,7 +70,6 @@
 (el-get-bundle popwin)
 (el-get-bundle prodigy)
 (el-get-bundle projectile)
-(el-get-bundle emacsmirror/python-mode)
 
 ;; (el-get-bundle rbenv)
 (el-get-bundle recentf-ext)
@@ -87,9 +86,9 @@
 (el-get-bundle spinner)
 (el-get-bundle vspinu/sesman)
 
-;; additional
-(el-get-bundle edn)
-(el-get-bundle epc)
+;; python
+(el-get-bundle DarthFennec/highlight-indent-guides)
+(el-get-bundle emacsmirror/python-mode)
 (el-get-bundle python-environment)
 (el-get-bundle tkf/emacs-jedi
   :load ("jedi-core.el")
@@ -97,16 +96,21 @@
   :depends (epc python-environment))
 (el-get-bundle company-jedi
   :depends (company-mode))
-
-(el-get-bundle tarao/el-get-lock)
-(el-get-bundle quickrun)
-(el-get-bundle daichirata/emacs-rotate)
+(el-get-bundle purcell/flymake-python-pyflakes)
 
 ;; rust
 (el-get-bundle rust-mode)
 (el-get-bundle racer-rust/racer :name rust-racer :checkout "v2.1.40")
 (el-get-bundle racer-rust/emacs-racer)
 (el-get-bundle cargo)
+
+;; additional
+(el-get-bundle edn)
+(el-get-bundle epc)
+
+(el-get-bundle tarao/el-get-lock)
+(el-get-bundle quickrun)
+(el-get-bundle daichirata/emacs-rotate)
 
 (el-get-bundle evil :build (("make")) :info nil)
 (el-get-bundle evil-numbers)
