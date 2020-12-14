@@ -28,6 +28,7 @@
 
 (require 'setup-evil)
 
+(global-flycheck-mode)
 ;; (package-initialize)
 
 (require 'cl-lib)
