@@ -17,7 +17,11 @@
 ;; ; try to automagically figure out indentation
 ;; (setq py-smart-indentation t)
 ;; (setq py-company-pycomplete-p t)
+;; (setq highlight-indent-guides-method 'character)
+(setq highlight-indent-guides-method 'column)
+(setq highlight-indent-guides-responsive 'top)
 
+;; (add-hook 'prog-mode-hook )
 (add-hook 'python-mode-hook
           (lambda ()
 	    (setq indent-tabs-mode nil)
@@ -25,6 +29,7 @@
 	    (setq tab-width 4)
 	    (eldoc-mode -1)
             (define-key python-mode-map [f7] 'py-shell)
+	    (highlight-indent-guides-mode)
 	    ;; (local-set-key (kbd "TAB") 'py-indent-line)
 	    ;; (local-set-key "\C-c\C-d" nil)
 	    ;; (local-set-key "\C-c\C-dd" 'py-help-at-point)
@@ -45,7 +50,7 @@
 ;; ;; (setq jedi:complete-on-dot t)
 ;; (setq jedi:use-shortcuts t)
 ;; (add-hook 'python-mode-hook 'jedi:setup)
-;; (add-to-list 'company-backends 'company-jedi) ; add to backend
+(add-to-list 'company-backends 'company-jedi) ; add to backend
 
 ;; py-help-at-point
 (provide 'setup-python)
