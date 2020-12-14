@@ -1,3 +1,7 @@
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
+
 ;; (require 'python-mode)
 
 ;; (autoload 'python-mode "python-mode" "Python Mode." t)
@@ -18,25 +22,41 @@
 ;; (setq py-smart-indentation t)
 ;; (setq py-company-pycomplete-p t)
 ;; (setq highlight-indent-guides-method 'character)
-(setq highlight-indent-guides-method 'column)
-(setq highlight-indent-guides-responsive 'top)
+;; (setq highlight-indent-guides-method 'column)
+;; (setq highlight-indent-guides-responsive 'top)
 
 ;; (add-hook 'prog-mode-hook )
+;; (add-hook 'python-mode-hook
+;;           (lambda ()
+;; 	    (setq indent-tabs-mode nil)
+;; 	    (setq indent-level 4)
+;; 	    (setq tab-width 4)
+;; 	    (eldoc-mode -1)
+;;             (define-key python-mode-map [f7] 'py-shell)
+;; 	    (flycheck-mode)
+;; 	    ;; (highlight-indent-guides-mode)
+;; 	    ;; (local-set-key (kbd "TAB") 'py-indent-line)
+;; 	    ;; (local-set-key "\C-c\C-d" nil)
+;; 	    ;; (local-set-key "\C-c\C-dd" 'py-help-at-point)
+;; 	    ;; (define-key python-mode-map (kbd "TAB") 'py-indent-line)
+;; 	    ;; (define-key py-ipython-shell-mode-map (kbd "TAB") 'py-indent-line)
+;; 	    ;;(turn-on-evil-mode-fixed-escape)
+;; 	    ))
+
 (add-hook 'python-mode-hook
           (lambda ()
+	    ;; (flymake-mode)
+	    (elpy-enable)
+	    (setq elpy-rpc-backend "jedi")
 	    (setq indent-tabs-mode nil)
 	    (setq indent-level 4)
 	    (setq tab-width 4)
-	    (eldoc-mode -1)
-            (define-key python-mode-map [f7] 'py-shell)
-	    (highlight-indent-guides-mode)
-	    ;; (local-set-key (kbd "TAB") 'py-indent-line)
-	    ;; (local-set-key "\C-c\C-d" nil)
-	    ;; (local-set-key "\C-c\C-dd" 'py-help-at-point)
-	    ;; (define-key python-mode-map (kbd "TAB") 'py-indent-line)
-	    ;; (define-key py-ipython-shell-mode-map (kbd "TAB") 'py-indent-line)
-	    ;;(turn-on-evil-mode-fixed-escape)
+
+	    (when (load "flycheck" t t)
+	      (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+	      (add-hook 'elpy-mode-hook 'flycheck-mode))
 	    ))
+
 
 ;; (setq py-complete-function nil)
 ;; (add-hook 'py-ipython-shell-mode-hook

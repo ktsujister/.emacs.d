@@ -1,3 +1,8 @@
+;;; package --- Summary
+;;; el-get related setup
+;;; Commentary:
+;;; Code:
+
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
@@ -87,8 +92,9 @@
 (el-get-bundle vspinu/sesman)
 
 ;; python
-(el-get-bundle DarthFennec/highlight-indent-guides)
-(el-get-bundle emacsmirror/python-mode)
+;; (el-get-bundle DarthFennec/highlight-indent-guides)
+(el-get-bundle jorgenschaefer/elpy)
+;; (el-get-bundle emacsmirror/python-mode)
 (el-get-bundle python-environment)
 (el-get-bundle tkf/emacs-jedi
   :load ("jedi-core.el")
@@ -96,7 +102,6 @@
   :depends (epc python-environment))
 (el-get-bundle company-jedi
   :depends (company-mode))
-(el-get-bundle purcell/flymake-python-pyflakes)
 
 ;; rust
 (el-get-bundle rust-mode)
@@ -123,6 +128,7 @@
 (el-get-bundle powerline-evil)
 
 ;; (el-get-bundle groovy-emacs-mode)
+;; (el-get-bundle material-theme)
 
 (el-get-lock)
 (el-get-lock 'cider 'clojure-mode)
