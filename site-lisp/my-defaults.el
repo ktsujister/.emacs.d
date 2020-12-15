@@ -1,3 +1,7 @@
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
+
 (setq inhibit-default-init t)
 (setq inhibit-startup-message t)
 ;; *scratch* starts empty
@@ -69,3 +73,4 @@
       evil-want-fine-undo t)
 
 (provide 'my-defaults)
+;;; my-defaults.el ends here
