@@ -51,7 +51,7 @@
 ;; (el-get-bundle company)
 (el-get-bundle dash)
 ;; (el-get-bundle drag-stuff)
-(el-get-bundle elixir-lang/emacs-elixir :name elixir-mode)
+;; (el-get-bundle elixir-lang/emacs-elixir :name elixir-mode)
 ;; (el-get-bundle ess :build ("cd lisp && make && cd .. && cd etc && make"))
 (el-get-bundle exec-path-from-shell)
 ;; (el-get-bundle expand-region)
