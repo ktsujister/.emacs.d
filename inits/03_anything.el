@@ -1,6 +1,5 @@
-(straight-use-package
- '(anything-config :type git :host github :repo "emacs-jp/anything"))
 (use-package anything-config
+  :straight (anything-config :type git :host github :repo "emacs-jp/anything")
   :config
   (setq anything-enable-shortcuts 'prefix)
   (bind-key* "C-x a a" 'my-anything)
