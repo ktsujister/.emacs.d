@@ -30,8 +30,6 @@
 (require 'setup-straight)
 ;; (require 'setup-el-get)
 
-;; (package-initialize)
-
 (require 'cl-lib)
 
 ;; (setq rbenv-modeline-function 'rbenv--modeline-plain)
@@ -69,11 +67,11 @@
 ;; (setq browse-url-browser-function 'w3m-browse-url)
 
 ;;; ruby-mode
-(autoload 'ruby-mode "ruby-mode" "Mode for editing ruby source files" t)
-(setq auto-mode-alist
-      (append '(("\\.rb$" . ruby-mode)) auto-mode-alist))
-(setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
-				     interpreter-mode-alist))
+;; (autoload 'ruby-mode "ruby-mode" "Mode for editing ruby source files" t)
+;; (setq auto-mode-alist
+;;       (append '(("\\.rb$" . ruby-mode)) auto-mode-alist))
+;; (setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
+;; 				     interpreter-mode-alist))
 ;(autoload 'run-ruby "inf-ruby"
 ;  "Run an inferior Ruby process")
 ;(autoload 'inf-ruby-keys "inf-ruby"
@@ -85,11 +83,6 @@
 ;; (global-eldoc-mode -1) ;; disable eldoc globally
 
 ;; (require 'setup-ess)
-;; new
-;; (setq company-complete-on-edit nil)
-;; (setq company-tooltip-delay 0)
-;; (setq company-auto-expand t) ;; auto expand first candidate
-
 ;; (require 'setup-python)
 
 (require 'setup-key-bindings)
