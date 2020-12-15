@@ -93,8 +93,8 @@
   (winner-mode 1))
 (windmove-default-keybindings)
 
-(require 'setup-anything)
-(require 'setup-popwin)
+;; (require 'setup-anything)
+;; (require 'setup-popwin)
 
 (setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")
 
@@ -106,15 +106,11 @@
 ;; (setq company-tooltip-delay 0)
 ;; (setq company-auto-expand t) ;; auto expand first candidate
 
-(require 'setup-python)
+;; (require 'setup-python)
 
 (require 'setup-key-bindings)
 (require 'setup-eww)
 (require 'setup-xml)
-(require 'setup-powerline)
-
-;;; ido-mode
-;; (ido-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
