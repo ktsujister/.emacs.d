@@ -6,6 +6,7 @@
 ;; You may delete these explanatory comments.
 ;; (package-initialize)
 
+(setq byte-compile-warnings '(not cl-functions obsolete))
 (unless window-system (menu-bar-mode -1))
 
 (let ((base (expand-file-name "site-lisp" user-emacs-directory)))
@@ -29,6 +30,7 @@
 (require 'setup-evil)
 
 (global-flycheck-mode)
+(setq flycheck-emacs-lisp-load-path 'inherit)
 ;; (package-initialize)
 
 (require 'cl-lib)
