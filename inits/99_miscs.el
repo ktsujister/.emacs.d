@@ -1,12 +1,13 @@
 ;;; uniquify settings
+(use-package parseedn)
 (use-package uniquify
+  :straight nil
   :config
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
   (setq uniquify-ignore-buffers-re "*[^*]+*"))
 
 ;;; bookmarks
-(use-package bookmarks
-  (setq bookmark-save-flag 1)) ; save bookmark if changed
+(setq bookmark-save-flag 1) ;; save bookmark if changed
 
 ;;; recentf
 (use-package recentf-ext
@@ -19,3 +20,12 @@
   (recentf-mode 1)
   :init
   (add-hook 'after-recentf-add-file-hook #'recentf-save-list))
+
+;; guide-key
+(use-package guide-key
+  :config
+  (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8" "C-x +" "C-x RET" "C-x 5"))
+  ;; (guide-key-mode 1)
+  (setq guide-key/idle-delay 0.1)
+  (setq guide-key/recursive-key-sequence-flag t)
+  (setq guide-key/popup-window-position 'bottom))
