@@ -55,8 +55,4 @@
 (setq guide-key/recursive-key-sequence-flag t)
 (setq guide-key/popup-window-position 'bottom)
 
-;; evil-numbers
-(define-key evil-normal-state-map (kbd "C-c +") #'evil-numbers/inc-at-pt)
-(define-key evil-normal-state-map (kbd "C-c -") #'evil-numbers/dec-at-pt)
-
 (provide 'setup-key-bindings)
