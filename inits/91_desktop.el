@@ -19,5 +19,3 @@
             (lambda (fn &rest args)
               (if (bound-and-true-p *my-desktop-save*)
                   (apply fn args))))
-
-(provide 'setup-desktop)
