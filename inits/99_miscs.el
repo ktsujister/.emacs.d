@@ -42,3 +42,6 @@
 
 ;; ispell
 (setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")
+
+;; paredit
+(use-package paredit)
