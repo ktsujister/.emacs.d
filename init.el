@@ -37,7 +37,6 @@
 ;; (setq rbenv-modeline-function 'rbenv--modeline-plain)
 
 (require 'setup-clojure)
-(require 'setup-rust)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;; (load-theme 'solarized t)

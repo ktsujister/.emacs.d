@@ -103,12 +103,6 @@
 (el-get-bundle company-jedi
   :depends (company-mode))
 
-;; rust
-(el-get-bundle rust-mode)
-(el-get-bundle racer-rust/racer :name rust-racer :checkout "v2.1.40")
-(el-get-bundle racer-rust/emacs-racer)
-(el-get-bundle cargo)
-
 ;; additional
 (el-get-bundle edn)
 (el-get-bundle epc)
