@@ -34,3 +34,11 @@
   :config
   (setq hl-paren-colors
 	'("red1" "yellow1" "green1" "blue1" "magenta1" "purple1")))
+
+;; winner-mode
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
+(windmove-default-keybindings)
+
+;; ispell
+(setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")

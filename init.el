@@ -42,7 +42,7 @@
 ;; (load-theme 'solarized t)
 ;; (setq solarized-termcolors 256)
 
-;; (require 'setup-hooks)
+(require 'setup-hooks)
 (require 'my-functions)
 
 (setq
@@ -81,16 +81,6 @@
 ;(add-hook 'ruby-mode-hook
 ;	  '(lambda ()
 ;	     (inf-ruby-keys)))
-
-;; winner-mode
-(when (fboundp 'winner-mode)
-  (winner-mode 1))
-(windmove-default-keybindings)
-
-;; (require 'setup-anything)
-;; (require 'setup-popwin)
-
-(setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")
 
 ;; (global-eldoc-mode -1) ;; disable eldoc globally
 
