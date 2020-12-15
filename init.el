@@ -7,7 +7,9 @@
 ;; (package-initialize)
 
 (setq byte-compile-warnings '(not cl-functions obsolete))
+
 (unless window-system (menu-bar-mode -1))
+(add-to-list 'exec-path (expand-file-name "~/.cargo/bin/"))
 
 (let ((base (expand-file-name "site-lisp" user-emacs-directory)))
   (add-to-list 'load-path base)
@@ -26,23 +28,21 @@
 ;; Enable my preferred defaults
 (require 'my-defaults)
 (require 'setup-straight)
-(require 'setup-el-get)
+;; (require 'setup-el-get)
 
-(global-flycheck-mode)
-(setq flycheck-emacs-lisp-load-path 'inherit)
 ;; (package-initialize)
 
 (require 'cl-lib)
 
 ;; (setq rbenv-modeline-function 'rbenv--modeline-plain)
 
-(require 'setup-clojure)
+;; (require 'setup-clojure)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;; (load-theme 'solarized t)
 ;; (setq solarized-termcolors 256)
 
-(require 'setup-hooks)
+;; (require 'setup-hooks)
 (require 'my-functions)
 
 (setq
@@ -58,7 +58,7 @@
     ("\\.txt$" . fundamental-mode))
   auto-mode-alist))
 
-(require 'setup-org)
+;; (require 'setup-org)
 
 (require 'setup-mew)
 
