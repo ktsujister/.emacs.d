@@ -117,10 +117,6 @@
 (el-get-bundle quickrun)
 (el-get-bundle daichirata/emacs-rotate)
 
-;; (el-get-bundle evil :build (("make")) :info nil)
-;; (el-get-bundle evil-numbers)
-;; (el-get-bundle org-evil)
-
 (el-get-bundle yoshiki/yaml-mode)
 (el-get-bundle terraform-mode)
 
