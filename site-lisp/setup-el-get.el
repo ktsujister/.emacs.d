@@ -136,3 +136,4 @@
 (el-get 'sync)
 
 (provide 'setup-el-get)
+;;; setup-el-get.el ends here
