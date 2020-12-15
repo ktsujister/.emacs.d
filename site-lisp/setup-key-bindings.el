@@ -39,8 +39,6 @@
 (global-set-key "\C-xa" 'my-anything)
 (global-set-key "\C-xc" 'compile)
 
-(global-set-key "\C-c\C-i" 'company-complete)
-
 ;;; aliases
 (defalias 'rof 'recentf-open-files)
 (defalias 'git 'magit-status)

@@ -25,9 +25,9 @@
 
 ;; Enable my preferred defaults
 (require 'my-defaults)
+(require 'setup-straight)
 (require 'setup-el-get)
-
-(require 'setup-evil)
+;; (require 'setup-evil)
 
 (global-flycheck-mode)
 (setq flycheck-emacs-lisp-load-path 'inherit)
@@ -122,11 +122,6 @@
 ;; (global-eldoc-mode -1) ;; disable eldoc globally
 
 ;; (require 'setup-ess)
-(global-company-mode)
-(setq company-idle-delay nil) ;; no auto complete
-;; (setq company-minimum-prefix-length 100)
-(setq company-selection-wrap-around t)
-(define-key company-active-map (kbd "C-h") nil) ;; C-h needs to be backspace for me :)
 ;; new
 ;; (setq company-complete-on-edit nil)
 ;; (setq company-tooltip-delay 0)
