@@ -16,4 +16,6 @@
   (setq recentf-auto-cleanup 60)
   ;; (setq recentf-auto-cleanup 'never)
   (setq recentf-auto-cleanup-timer (run-with-idle-timer 60 t 'recentf-save-list))
-  (recentf-mode 1))
+  (recentf-mode 1)
+  :init
+  (add-hook 'after-recentf-add-file-hook #'recentf-save-list))

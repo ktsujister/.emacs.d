@@ -44,9 +44,6 @@
  (lambda ()
    (paredit-mode 1)
    (highlight-parentheses-mode)))
-(add-hook
- 'after-recentf-add-file-hook
- 'recentf-save-list)
 (require 'yasnippet)
 (yas-reload-all)
 (add-hook
