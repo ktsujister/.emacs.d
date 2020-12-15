@@ -29,3 +29,8 @@
   (setq guide-key/idle-delay 0.1)
   (setq guide-key/recursive-key-sequence-flag t)
   (setq guide-key/popup-window-position 'bottom))
+
+(use-package highlight-parentheses
+  :config
+  (setq hl-paren-colors
+	'("red1" "yellow1" "green1" "blue1" "magenta1" "purple1")))

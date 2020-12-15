@@ -82,12 +82,6 @@
 ;	  '(lambda ()
 ;	     (inf-ruby-keys)))
 
-;; (require 'highlight-parentheses)
-(setq hl-paren-colors
-      '("red1" "yellow1" "green1" "blue1" "magenta1" "purple1"))
-
-(require 'setup-desktop)
-
 ;; winner-mode
 (when (fboundp 'winner-mode)
   (winner-mode 1))
