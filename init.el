@@ -27,7 +27,6 @@
 (require 'my-defaults)
 (require 'setup-straight)
 (require 'setup-el-get)
-;; (require 'setup-evil)
 
 (global-flycheck-mode)
 (setq flycheck-emacs-lisp-load-path 'inherit)
