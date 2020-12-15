@@ -23,10 +23,12 @@
 (setq straight-use-package-by-default t)
 
 ;; init-loaderをインストール&読み込み
-(use-package init-loader)
-
-;; ~/.emacs.d/inits/ 以下のファイルを全部読み込む
-(init-loader-load "~/.emacs.d/inits")
+(use-package init-loader
+  :init
+  (setq init-loader-show-log-after-init 'error-only)
+  :config
+  ;; ~/.emacs.d/inits/ 以下のファイルを全部読み込む
+  (init-loader-load "~/.emacs.d/inits"))
 
 (provide 'setup-straight)
 ;;; setup-straight.el ends here
