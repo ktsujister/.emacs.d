@@ -17,8 +17,6 @@
 ;; (global-set-key "\C-h" 'delete-backward-char)
 (define-key key-translation-map (kbd "C-h") (kbd "<DEL>")) ;; works in minibuffer as well
 
-(global-set-key (kbd "C-x g") 'magit-status)
-
 (global-set-key "\M-z" 'fastnav-zap-up-to-char-forward)
 (global-set-key "\M-Z" 'fastnav-zap-up-to-char-backward)
 ;; (global-set-key "\M-s" 'fastnav-jump-to-char-forward)
@@ -35,8 +33,6 @@
 ;; (global-set-key "\M-M" 'fastnav-mark-to-char-backward)
 
 (global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-xb" 'anything-mini)
-(global-set-key "\C-xa" 'my-anything)
 (global-set-key "\C-xc" 'compile)
 
 ;;; aliases
@@ -47,12 +43,5 @@
 (defalias 'qr 'quickrun)
 (defalias 'cb 'comment-box)
 
-;; guide-key
-(require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8" "C-x +" "C-x RET" "C-x 5"))
-;; (guide-key-mode 1)
-(setq guide-key/idle-delay 0.1)
-(setq guide-key/recursive-key-sequence-flag t)
-(setq guide-key/popup-window-position 'bottom)
 
 (provide 'setup-key-bindings)
