@@ -60,11 +60,6 @@
     ("\\.txt$" . fundamental-mode))
   auto-mode-alist))
 
-;;; uniquify settings
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
-(setq uniquify-ignore-buffers-re "*[^*]+*")
-
 (require 'setup-org)
 
 (require 'setup-mew)
@@ -92,20 +87,6 @@
 ;; (require 'highlight-parentheses)
 (setq hl-paren-colors
       '("red1" "yellow1" "green1" "blue1" "magenta1" "purple1"))
-
-;;; bookmarks
-(setq bookmark-save-flag 1) ; save bookmark if changed
-
-(when (require 'recentf-ext nil t)
-  ;; (setq recentf-save-file
-  ;; 	;; "~/.emacs.d/.recentf"
-  ;; 	(expand-file-name ".recentf" user-emacs-directory))
-  (setq recentf-max-saved-items 2000)
-  (setq recentf-exclude '("recentf"))
-  (setq recentf-auto-cleanup 60)
-  ;; (setq recentf-auto-cleanup 'never)
-  (setq recentf-auto-cleanup-timer (run-with-idle-timer 60 t 'recentf-save-list))
-  (recentf-mode 1))
 
 (require 'setup-desktop)
 
