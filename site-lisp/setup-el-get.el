@@ -41,7 +41,7 @@
 ;;; others
 (el-get-bundle alchemist)
 ;; (el-get-bundle anything)
-(el-get-bundle emacs-jp/anything)
+;; (el-get-bundle emacs-jp/anything)
 ;; (el-get-bundle bind-key)
 (el-get-bundle cedit)
 
@@ -57,7 +57,7 @@
 ;; (el-get-bundle expand-region)
 (el-get-bundle f)
 (el-get-bundle fastnav)
-(el-get-bundle flycheck)
+;; (el-get-bundle flycheck)
 (el-get-bundle gist)
 (el-get-bundle guide-key)
 (el-get-bundle highlight-parentheses)
@@ -69,7 +69,7 @@
 (el-get-bundle markdown-mode)
 (el-get-bundle monky)
 (el-get-bundle multiple-cursors)
-(el-get-bundle nyan-mode)
+;; (el-get-bundle nyan-mode)
 ;; (el-get-bundle pallet)
 (el-get-bundle paredit)
 (el-get-bundle popwin)
@@ -113,9 +113,6 @@
 
 (el-get-bundle yoshiki/yaml-mode)
 (el-get-bundle terraform-mode)
-
-(el-get-bundle powerline)
-(el-get-bundle powerline-evil)
 
 ;; (el-get-bundle groovy-emacs-mode)
 ;; (el-get-bundle material-theme)
