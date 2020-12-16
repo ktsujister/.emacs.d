@@ -45,6 +45,7 @@
 (global-font-lock-mode t)
 (setq font-lock-support-mode 'jit-lock-mode)
 
+;; highlight region when selected by C-SPACE mark
 (setq-default transient-mark-mode t)
 
 (setq default-frame-alist initial-frame-alist)
@@ -63,6 +64,17 @@
 
 ;; (remove-hook 'find-file-hook 'vc-find-file-hook)
 ;; (remove-hook 'kill-buffer-hook 'vc-kill-buffer-hook)
+
+;;; bookmarks
+(setq bookmark-save-flag 1) ;; save bookmark if changed
+
+;; winner-mode
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
+(windmove-default-keybindings)
+
+;; ispell
+(setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")
 
 
 (provide 'my-defaults)

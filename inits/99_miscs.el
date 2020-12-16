@@ -6,9 +6,6 @@
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
   (setq uniquify-ignore-buffers-re "*[^*]+*"))
 
-;;; bookmarks
-(setq bookmark-save-flag 1) ;; save bookmark if changed
-
 ;;; recentf
 (use-package recentf-ext
   :config
@@ -34,14 +31,6 @@
   :config
   (setq hl-paren-colors
 	'("red1" "yellow1" "green1" "blue1" "magenta1" "purple1")))
-
-;; winner-mode
-(when (fboundp 'winner-mode)
-  (winner-mode 1))
-(windmove-default-keybindings)
-
-;; ispell
-(setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")
 
 ;; paredit
 (use-package paredit
