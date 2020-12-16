@@ -1,11 +1,5 @@
 ;; (setq debug-on-error t)
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-;; (package-initialize)
-
 (setq byte-compile-warnings '(not cl-functions obsolete))
 
 (unless window-system (menu-bar-mode -1))
@@ -28,13 +22,10 @@
 ;; Enable my preferred defaults
 (require 'my-defaults)
 (require 'setup-straight)
-;; (require 'setup-el-get)
 
 (require 'cl-lib)
 
 ;; (setq rbenv-modeline-function 'rbenv--modeline-plain)
-
-;; (require 'setup-clojure)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;; (load-theme 'solarized t)
@@ -56,8 +47,6 @@
     ("\\.txt$" . fundamental-mode))
   auto-mode-alist))
 
-;; (require 'setup-org)
-
 (require 'setup-mew)
 
 ;; ;;; w3m
@@ -66,11 +55,7 @@
 ;; (setq w3m-use-cookies t)
 ;; (setq browse-url-browser-function 'w3m-browse-url)
 
-
 ;; (global-eldoc-mode -1) ;; disable eldoc globally
-
-;; (require 'setup-ess)
-;; (require 'setup-python)
 
 (require 'setup-key-bindings)
 (require 'setup-eww)
