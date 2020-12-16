@@ -7,7 +7,9 @@
 ;; (package-initialize)
 
 (setq byte-compile-warnings '(not cl-functions obsolete))
+
 (unless window-system (menu-bar-mode -1))
+(add-to-list 'exec-path (expand-file-name "~/.cargo/bin/"))
 
 (let ((base (expand-file-name "site-lisp" user-emacs-directory)))
   (add-to-list 'load-path base)
@@ -25,20 +27,14 @@
 
 ;; Enable my preferred defaults
 (require 'my-defaults)
-(require 'setup-el-get)
-
-(require 'setup-evil)
-
-(global-flycheck-mode)
-(setq flycheck-emacs-lisp-load-path 'inherit)
-;; (package-initialize)
+(require 'setup-straight)
+;; (require 'setup-el-get)
 
 (require 'cl-lib)
 
 ;; (setq rbenv-modeline-function 'rbenv--modeline-plain)
 
-(require 'setup-clojure)
-(require 'setup-rust)
+;; (require 'setup-clojure)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;; (load-theme 'solarized t)
@@ -60,12 +56,7 @@
     ("\\.txt$" . fundamental-mode))
   auto-mode-alist))
 
-;;; uniquify settings
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
-(setq uniquify-ignore-buffers-re "*[^*]+*")
-
-(require 'setup-org)
+;; (require 'setup-org)
 
 (require 'setup-mew)
 
@@ -75,72 +66,15 @@
 ;; (setq w3m-use-cookies t)
 ;; (setq browse-url-browser-function 'w3m-browse-url)
 
-;;; ruby-mode
-(autoload 'ruby-mode "ruby-mode" "Mode for editing ruby source files" t)
-(setq auto-mode-alist
-      (append '(("\\.rb$" . ruby-mode)) auto-mode-alist))
-(setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
-				     interpreter-mode-alist))
-;(autoload 'run-ruby "inf-ruby"
-;  "Run an inferior Ruby process")
-;(autoload 'inf-ruby-keys "inf-ruby"
-;  "Set local key defs for inf-ruby in ruby-mode")
-;(add-hook 'ruby-mode-hook
-;	  '(lambda ()
-;	     (inf-ruby-keys)))
-
-;; (require 'highlight-parentheses)
-(setq hl-paren-colors
-      '("red1" "yellow1" "green1" "blue1" "magenta1" "purple1"))
-
-;;; bookmarks
-(setq bookmark-save-flag 1) ; save bookmark if changed
-
-(when (require 'recentf-ext nil t)
-  ;; (setq recentf-save-file
-  ;; 	;; "~/.emacs.d/.recentf"
-  ;; 	(expand-file-name ".recentf" user-emacs-directory))
-  (setq recentf-max-saved-items 2000)
-  (setq recentf-exclude '("recentf"))
-  (setq recentf-auto-cleanup 60)
-  ;; (setq recentf-auto-cleanup 'never)
-  (setq recentf-auto-cleanup-timer (run-with-idle-timer 60 t 'recentf-save-list))
-  (recentf-mode 1))
-
-(require 'setup-desktop)
-
-;; winner-mode
-(when (fboundp 'winner-mode)
-  (winner-mode 1))
-(windmove-default-keybindings)
-
-(require 'setup-anything)
-(require 'setup-popwin)
-
-(setq ispell-personal-dictionary "~/.emacs.d/.ispell-dictionary")
 
 ;; (global-eldoc-mode -1) ;; disable eldoc globally
 
 ;; (require 'setup-ess)
-(global-company-mode)
-(setq company-idle-delay nil) ;; no auto complete
-;; (setq company-minimum-prefix-length 100)
-(setq company-selection-wrap-around t)
-(define-key company-active-map (kbd "C-h") nil) ;; C-h needs to be backspace for me :)
-;; new
-;; (setq company-complete-on-edit nil)
-;; (setq company-tooltip-delay 0)
-;; (setq company-auto-expand t) ;; auto expand first candidate
-
-(require 'setup-python)
+;; (require 'setup-python)
 
 (require 'setup-key-bindings)
 (require 'setup-eww)
 (require 'setup-xml)
-(require 'setup-powerline)
-
-;;; ido-mode
-;; (ido-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

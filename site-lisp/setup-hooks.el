@@ -45,11 +45,6 @@
    (paredit-mode 1)
    (highlight-parentheses-mode)))
 (add-hook
- 'after-recentf-add-file-hook
- 'recentf-save-list)
-(require 'yasnippet)
-(yas-reload-all)
-(add-hook
  'sh-mode-hook
  (lambda ()
    (yas-minor-mode 1)
@@ -65,18 +60,6 @@
    ;; remove keybinding for sh-if to use company-mode
    (define-key sh-mode-map "\C-c\C-i" nil)
    ))
-
-(add-hook
- 'magit-mode-hook
- (lambda ()
-   ;; remove keybinding for magit-add-change-log-entry for anything
-   (define-key magit-status-mode-map "\C-xa" nil)))
-
-(add-hook
- 'magit-hode-hook
- (lambda ()
-   ;; remove keybinding for magit-add-change-log-entry for anything
-   (define-key magit-log-mode-map "\C-xa" nil)))
 
 (add-hook
  'emacs-startup-hook
