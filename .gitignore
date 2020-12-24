@@ -15,7 +15,7 @@
 /recentf
 /smex-items
 /el-get.lock
-/*.elc
+*.elc
 /recentf~
 straight/
 transient/
