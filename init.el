@@ -16,7 +16,7 @@
 	(let ((default-directory name))
 	  (normal-top-level-add-subdirs-to-load-path))
 	))))
-;; (add-to-list 'load-path "~/env/share/emacs/site-lisp/w3m")
+
 (add-to-list 'load-path "~/env/share/emacs/site-lisp/mew")
 
 ;; Enable my preferred defaults
@@ -46,15 +46,6 @@
   auto-mode-alist))
 
 (require 'setup-mew)
-
-;; ;;; w3m
-;; (require 'w3m)
-;; (require 'mew-w3m)
-;; (setq w3m-use-cookies t)
-;; (setq browse-url-browser-function 'w3m-browse-url)
-
-;; (global-eldoc-mode -1) ;; disable eldoc globally
-
 (require 'setup-key-bindings)
 (require 'setup-eww)
 (require 'setup-xml)
