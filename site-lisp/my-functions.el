@@ -1,9 +1,12 @@
+;;; package -- Summary
+;;; Commentary:
+;;; Code:
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; my functions
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defun my-forward-word (&optional arg)
-  "Move to head of next word. This is like 'w' in vi."
+  "Move to head of next word.  This is like 'w' in vi."
   (interactive "p")
   (forward-word (1+ arg))
   (forward-word -1))
@@ -14,7 +17,7 @@
   (count-words-region (point-min) (point-max)))
 
 (defun my-buffer-fix (&optional arg)
-  "Removes spaces before tab, and space or tab at the end of the line."
+  "Remove spaces before tab, and space or tab at the end of the line."
   (interactive "p")
   (point-to-register t)
   ;replace zenkaku space to two spaces.
@@ -34,13 +37,13 @@
   (jump-to-register t))
 
 (defun my-save-buffer (&optional arg)
-  "Removes spaces before tab, and space or tab at the end of the line."
+  "Remove spaces before tab, and space or tab at the end of the line."
   (interactive "p")
   (my-buffer-fix)
   (save-buffer))
 
 (defun my-copy-block (&optional arg)
-  "perform backward-up-list and saves the sexp in ring."
+  "Perform `backward-up-list` and save the sexp in ring."
   (interactive "p")
   (backward-up-list)
   (mark-sexp)
@@ -49,6 +52,7 @@
 (global-set-key "\C-cw" 'cb-copy)
 (global-set-key "\C-cy" 'cb-paste)
 (defun cb-copy ()
+  "Copy to clipboard."
   (interactive)
 ;  (let ((coding-system-for-write 'shift_jis-dos))
 ;    (shell-command-on-region (region-beginning) (region-end) "cat > /dev/clipboard" nil nil nil))
@@ -56,6 +60,7 @@
     (shell-command-on-region (region-beginning) (region-end) "cat | pbcopy" nil nil nil))
   (message ""))
 (defun cb-paste ()
+  "Paste from clipboard."
   (shell-command-to-string "pbpaste"))
 ;  (interactive)
 ;  (let ((coding-system-for-read 'shift_jis-dos))
@@ -64,9 +69,11 @@
 
 ;; http://stackoverflow.com/a/23382008/262750
 (defun display-ansi-colors ()
+  "Displays ansi colors."
   (interactive)
   (let ((inhibit-read-only t))
     (ansi-color-apply-on-region (point-min) (point-max))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'my-functions)
+;;; my-functions.el ends here
