@@ -1,5 +1,6 @@
-;;(el-get-bundle evil :build (("make")) :info nil)
-;;(el-get-bundle evil-numbers)
+;; (el-get-bundle evil :build (("make")) :info nil)
+;; (el-get-bundle evil-numbers)
+
 (use-package evil
   :init
   ;; evil-mode related. this needs to be set before (require 'evil)
