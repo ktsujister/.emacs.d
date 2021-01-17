@@ -36,3 +36,10 @@
 (use-package paredit
   :ensure t
   :defer t)
+
+;; https://github.com/emacs-jp/emacs-jp.github.com/issues/38
+(use-package hl-line+
+  :config
+  (toggle-hl-line-when-idle)
+  (setq hl-line-idle-interval 3)
+  )
