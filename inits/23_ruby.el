@@ -11,3 +11,5 @@
 ;(add-hook 'ruby-mode-hook
 ;	  '(lambda ()
 ;	     (inf-ruby-keys)))
+
+(setq ruby-insert-encoding-magic-comment nil)
