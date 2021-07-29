@@ -12,6 +12,7 @@
   (global-set-key (kbd "C-x b") 'anything-buffers-list)
   (global-set-key (kbd "C-x a r") 'anything-recentf)
   (global-set-key (kbd "C-x a b") 'anything-bookmarks)
+  (global-set-key (kbd "C-x a k") 'anything-show-kill-ring)
   )
 ;; anything
 ;; (require 'anything)
