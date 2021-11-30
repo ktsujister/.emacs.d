@@ -42,7 +42,8 @@
     ("\\.xsd$\\|\\.xml$\\|\\.xsx$" . nxml-mode)
     ("\\.jsp$" . html-mode)
     ("\\.toml$" . conf-toml-mode)
-    ("\\.txt$" . fundamental-mode))
+    ;; ("\\.txt$" . fundamental-mode)
+    )
   auto-mode-alist))
 
 (require 'setup-mew)
