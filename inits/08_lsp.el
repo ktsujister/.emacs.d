@@ -22,17 +22,9 @@
   (lsp-ui-doc-position 'top)
   (lsp-ui-doc-max-width  60)
   (lsp-ui-doc-max-height 20)
-  ;; (lsp-ui-doc-use-childframe t)
-  ;; (lsp-ui-doc-use-webkit nil)
+  (lsp-ui-doc-use-childframe t)
+  (lsp-ui-doc-use-webkit nil)
   (lsp-ui-doc-delay 2.0)
-
-  ;; ;; lsp-ui-doc
-  ;; (lsp-ui-doc-enable            t)
-  ;; ;; (lsp-ui-doc-header            t)
-  ;; (lsp-ui-doc-include-signature t)
-  ;; (lsp-ui-doc-position          'top)         ;; top bottom at-point
-  ;; (lsp-ui-doc-alignment         'frame)
-  ;; (lsp-ui-doc-use-childframe    t)
 
   ;; lsp-ui-flycheck
   (lsp-ui-flycheck-enable t)
