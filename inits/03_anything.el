@@ -5,10 +5,10 @@
   (setq anything-enable-shortcuts 'prefix)
   (bind-key* "C-x C-a" 'my-anything)
   (bind-keys :map anything-map
-	     ((kbd "@") . anything-select-with-prefix-shortcut)
+	     ("@" . anything-select-with-prefix-shortcut)
 	     ("C-M-p" . anything-previous-source)
 	     ("C-M-n" . anything-next-source))
-  (global-set-key (kbd "M-x") 'anything-M-x)
+  ;; (global-set-key (kbd "M-x") 'anything-M-x)
   (global-set-key (kbd "C-x b") 'anything-buffers-list)
   (global-set-key (kbd "C-x a r") 'anything-recentf)
   (global-set-key (kbd "C-x a b") 'anything-bookmarks)
