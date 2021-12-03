@@ -24,8 +24,8 @@
    helm-split-window-default-side 'other ;; open helm buffer in another window
    helm-split-window-in-side-p t ;; open helm buffer inside current window, not occupy whole other window
    helm-candidate-number-limit 200 ; limit the number of displayed canidates
-   helm-move-to-line-cycle-in-source t ; move to end or beginning of source when reaching top or bottom of source.
-   ;; helm-move-to-line-cycle-in-source nil ; move to end or beginning of source when reaching top or bottom of source.
+   ;; helm-move-to-line-cycle-in-source t ; move to end or beginning of source when reaching top or bottom of source.
+   helm-move-to-line-cycle-in-source nil ; move to end or beginning of source when reaching top or bottom of source.
    )
   ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
   ;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
@@ -40,3 +40,8 @@
   ;; (helm-M-x-fuzzy-match t)
   (helm-autoresize-mode 1)
   (helm-mode 0))
+
+(use-package helm-descbinds
+  :bind ("C-c b" . helm-descbinds)
+  :config
+  (helm-descbinds-mode))
