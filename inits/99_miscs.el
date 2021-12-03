@@ -43,3 +43,5 @@
   (toggle-hl-line-when-idle)
   (setq hl-line-idle-interval 3)
   )
+
+(use-package sr-speedbar)
