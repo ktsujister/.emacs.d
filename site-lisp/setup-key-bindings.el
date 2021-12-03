@@ -4,10 +4,10 @@
 (global-set-key [f3] 'mew)
 (global-set-key [f4] 'display-line-numbers-mode)
 (global-set-key [f5] 'toggle-truncate-lines)
-(global-set-key [f6] 'my-count-words)
-;; (global-set-key [f7] 'slime-repl)
+;; (global-set-key [f6] 'my-count-words)
 (global-set-key [f7] 'cider-switch-to-repl-buffer)
 (global-set-key [f8] 'todo-show)
+(global-set-key [f9] 'sr-speedbar-toggle)
 
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-x\M-b" 'my-buffer-fix)
