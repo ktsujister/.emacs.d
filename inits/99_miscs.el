@@ -21,7 +21,9 @@
 ;; guide-key
 (use-package guide-key
   :config
-  (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8" "C-x +" "C-x RET" "C-x 5"))
+  (setq guide-key/guide-key-sequence
+	'("C-x r" "C-x 4" "C-x v" "C-x 8" "C-x +" "C-x RET"
+	  "C-x 5" "C-c h"))
   ;; (guide-key-mode 1)
   (setq guide-key/idle-delay 0.1)
   (setq guide-key/recursive-key-sequence-flag t)
