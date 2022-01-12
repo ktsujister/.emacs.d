@@ -52,7 +52,7 @@
 
 (grep-compute-defaults)
 ;; (grep-apply-setting 'grep-find-command "find . ! -name \"*~\" ! -name \"#*#\" -type f -print0 | xargs -0 -e grep -nH -e ")
-(grep-apply-setting 'grep-find-command "rg -Hn --no-heading --color=never ")
+(grep-apply-setting 'grep-find-command "rg -Hn --no-heading --color=never --max-columns 150 ")
 
 (setq auto-save-default nil)
 
