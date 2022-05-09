@@ -21,11 +21,6 @@
    (setq tab-width 4)
    (setq show-trailing-whitespace t)))
 (add-hook
- 'org-mode-hook
- (lambda ()
-   (setq tab-width 4)
-   (setq show-trailing-whitespace t)))
-(add-hook
  'js-mode-hook
  (lambda ()
    (setq tab-width 4)

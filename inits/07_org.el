@@ -1,6 +1,9 @@
 (use-package org
   :straight nil
   :mode (("\\.org$" . org-mode))
+  :init
+  (setq tab-width 4)
+  (setq show-trailing-whitespace t)
   :config
   (setq org-agenda-include-diary t)
   (setq org-log-done t)
@@ -30,4 +33,15 @@
      (python . t)
      (ruby . t)
      (java . t)
-     (R . t))))
+     (R . t)))
+
+  (setq org-startup-indented t)    ;; 見出しをインデント
+  ;; (setq org-indent-mode-turns-on-hiding-stars nil)  ;; 見出しをインデントした時にアスタリスクが減るのを防ぐ
+  (setq org-indent-indentation-per-level 2)  ;; インデントの幅を設定
+  (setq org-startup-folded 'content)  ;; 見出しの初期状態（見出しだけ表示）
+  (setq org-use-speed-commands t)
+
+  (global-set-key (kbd "C-c c") 'org-capture)
+  (setq org-directory "~/memo/")
+  (setq org-default-notes-file (concat org-directory "notes.org"))
+  )
