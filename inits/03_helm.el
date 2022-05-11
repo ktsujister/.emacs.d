@@ -3,6 +3,7 @@
   :bind (("M-x" . helm-M-x)
          ("C-x b" . helm-mini)
          ("C-x C-f" . helm-find-files)
+         ("C-x C-b" . helm-buffers-list)
 	 ("C-x r b" . helm-filtered-bookmarks)
          ("C-c y"   . helm-show-kill-ring)
          ("C-c m"   . helm-man-woman)
