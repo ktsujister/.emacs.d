@@ -20,6 +20,7 @@
 		    mew-virtual-mode
 		    mew-message-mode
 		    mew-draft-mode
+		    calendar-mode
 		    term-mode))
       (add-to-list 'evil-emacs-state-modes mode))
     ;; insert state
