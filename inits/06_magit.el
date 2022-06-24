@@ -12,9 +12,9 @@
      ))
 
   ;; revision
-  (remove-hook 'magit-revision-sections-hook 'magit-insert-revision-headers)
-  (remove-hook 'magit-revision-sections-hook 'magit-insert-revision-notes)
-  (remove-hook 'magit-revision-sections-hook 'magit-insert-revision-diff)
+  ;; (remove-hook 'magit-revision-sections-hook 'magit-insert-revision-headers)
+  ;; (remove-hook 'magit-revision-sections-hook 'magit-insert-revision-notes)
+  ;; (remove-hook 'magit-revision-sections-hook 'magit-insert-revision-diff)
   (remove-hook 'magit-revision-sections-hook 'magit-insert-revision-tag)
   (remove-hook 'magit-revision-sections-hook 'magit-insert-xref-buttons)
 
