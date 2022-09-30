@@ -23,7 +23,10 @@
 (add-hook
  'js-mode-hook
  (lambda ()
-   (setq tab-width 4)
+   (setq js-indent-level 2)
+   (setq indent-tabs-mode nil)
+   ;; (setq tab-width 2)
+   ;; (setq indent-line-function 'insert-tab)
    (setq show-trailing-whitespace t)
    ;;(turn-on-evil-mode-fixed-escape)
    ))
