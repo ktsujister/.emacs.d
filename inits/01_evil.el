@@ -13,14 +13,14 @@
   :config
   (progn
     ;; emacs state
-    (dolist (mode '(dired-mode
-		    org-mode
+    (dolist (mode '(calendar-mode
+		    ;; dired-mode
 		    magit-mode
+		    mew-draft-mode
+		    mew-message-mode
 		    mew-summary-mode
 		    mew-virtual-mode
-		    mew-message-mode
-		    mew-draft-mode
-		    calendar-mode
+		    org-mode
 		    term-mode))
       (add-to-list 'evil-emacs-state-modes mode))
     ;; insert state
