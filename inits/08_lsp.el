@@ -8,6 +8,12 @@
   (lsp-inhibit-message t)
   (lsp-message-project-root-warning t)
   (lsp-eldoc-enable-hover nil)
+  ;; (add-to-list 'lsp-clients-clangd-args '--clang-tidy')
+  (add-hook 'c-mode-hook 'lsp)
+  (add-hook 'c++-mode-hook 'lsp)
+  (add-hook 'c-mode--hook #'lsp-clangd-c-enable)
+  (add-hook 'c++-mode-hook #'lsp-clangd-c++-enable)
+  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
   )
 
 (use-package lsp-ui
