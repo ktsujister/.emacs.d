@@ -16,7 +16,6 @@
 	 ;; ("C-i" . helm-execute-persistent-action)
 	 )
   :config
-  (require 'helm-config)
   (setq
    helm-scroll-amount 4 ; scroll 4 lines other window using M-<next>/M-<prior>
    helm-quick-update t ; do not display invisible candidates
