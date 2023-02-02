@@ -43,7 +43,6 @@
 
 (require 'setup-mew)
 (require 'setup-key-bindings)
-(require 'setup-eww)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

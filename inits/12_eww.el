@@ -38,5 +38,3 @@
 (setq eww-search-prefix "https://www.google.co.jp/search?q=")
 (setq shr-inhibit-images t)
 (setq browse-url-browser-function 'eww-browse-url)
-
-(provide 'setup-eww)
