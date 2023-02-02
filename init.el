@@ -27,10 +27,6 @@
 
 ;; (setq rbenv-modeline-function 'rbenv--modeline-plain)
 
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
-;; ;; (load-theme 'solarized t)
-;; (setq solarized-termcolors 256)
-
 (require 'setup-hooks)
 (require 'my-functions)
 
@@ -58,7 +54,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(solarized))
  '(custom-safe-themes
-   '("f5b6be56c9de9fd8bdd42e0c05fecb002dedb8f48a5f00e769370e4517dde0e8" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default))
+   '("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default))
  '(frame-background-mode 'dark)
  '(highlight-parentheses-colors '("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900"))
  '(magit-pull-arguments nil)
