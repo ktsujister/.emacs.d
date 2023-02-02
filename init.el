@@ -35,7 +35,6 @@
  (append
   '(("\\.cs$" . csharp-mode)
     ("\\.cs$\\|\\.cpp$\\|\\.c$\\|\\.h$" . c++-mode)
-    ("\\.xsd$\\|\\.xml$\\|\\.xsx$" . nxml-mode)
     ("\\.jsp$" . html-mode)
     ("\\.toml$" . conf-toml-mode)
     ;; ("\\.txt$" . fundamental-mode)
@@ -45,7 +44,6 @@
 (require 'setup-mew)
 (require 'setup-key-bindings)
 (require 'setup-eww)
-(require 'setup-xml)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
