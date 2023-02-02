@@ -77,10 +77,7 @@
     (linum-mode -1)
     (font-lock-mode -1)
     (fundamental-mode)))
-(add-hook 'find-file-hook 'my-find-file-check-make-large-file-read-only-hook)
 
-(add-hook 'c++-mode-hook 'company-mode) ; 補完用
-(add-hook 'c++-mode-hook 'flycheck-mode) ; チェック用
-;; DEL		paredit-backward-delete
+(add-hook 'find-file-hook 'my-find-file-check-make-large-file-read-only-hook)
 
 (provide 'setup-hooks)

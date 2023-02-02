@@ -23,3 +23,5 @@
   ;; (c-set-offset 'case-label 0)
   )
 
+(add-hook 'c++-mode-hook 'company-mode) ; 補完用
+(add-hook 'c++-mode-hook 'flycheck-mode) ; チェック用
