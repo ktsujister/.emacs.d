@@ -1,8 +1,14 @@
 ;;; ruby-mode
-;; (autoload 'ruby-mode "ruby-mode" "Mode for editing ruby source files" t)
 
 (setq auto-mode-alist
       (append '(("\\.ruby$" . ruby-mode)) auto-mode-alist))
+
+(add-hook
+ 'ruby-mode-hook
+ (lambda ()
+   (setq tab-width 4)
+   (setq show-trailing-whitespace t)))
+
 ;; (setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
 ;; 				     interpreter-mode-alist))
 ;(autoload 'run-ruby "inf-ruby"
