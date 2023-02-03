@@ -7,7 +7,9 @@
  'ruby-mode-hook
  (lambda ()
    (setq tab-width 4)
-   (setq show-trailing-whitespace t)))
+   (setq show-trailing-whitespace t)
+   (setq flycheck-checker 'ruby-rubocop)
+   (flycheck-mode 1)))
 
 ;; (setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
 ;; 				     interpreter-mode-alist))
