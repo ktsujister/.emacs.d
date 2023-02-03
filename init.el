@@ -49,9 +49,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(solarized))
  '(custom-safe-themes
-   '("3d88e73a96e18dd7c9c4cb7aa2cc1cd166efc52931fc914e34e9f142495891eb" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default))
+   '("3d88e73a96e18dd7c9c4cb7aa2cc1cd166efc52931fc914e34e9f142495891eb" default))
  '(frame-background-mode 'dark)
  '(highlight-parentheses-colors '("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900"))
  '(magit-pull-arguments nil)
