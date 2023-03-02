@@ -18,6 +18,7 @@
 	))))
 
 (add-to-list 'load-path "~/env/share/emacs/site-lisp/mew")
+(add-to-list 'Info-default-directory-list "~/env/share/info")
 
 ;; Enable my preferred defaults
 (require 'my-defaults)
