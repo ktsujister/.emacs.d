@@ -63,9 +63,4 @@
  ;; If there is more than one, they won't work right.
  '(font-lock-comment-delimiter-face ((t (:foreground "magenta" :slant normal))))
  '(font-lock-comment-face ((t (:foreground "magenta" :slant normal))))
- '(font-lock-doc-face ((t (:foreground "cyan" :slant normal))))
- '(powerline-evil-base-face ((t (:foreground "black" :inherit mode-line))))
- '(powerline-evil-emacs-face ((t (:foreground "violet" :inherit powerline-evil-base-face))))
- '(powerline-evil-insert-face ((t (:foreground "blue" :inherit powerline-evil-base-face))))
- '(powerline-evil-motion-face ((t (:foreground "magenta" :inherit powerline-evil-base-face))))
- '(powerline-evil-normal-face ((t (:foreground "green" :inherit powerline-evil-base-face)))))
+ '(font-lock-doc-face ((t (:foreground "cyan" :slant normal)))))
