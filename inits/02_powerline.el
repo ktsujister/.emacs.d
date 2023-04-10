@@ -2,7 +2,7 @@
   :ensure t)
 (use-package powerline-evil
   :after powerline
-  :config
+  :init
   (powerline-evil-center-color-theme)
   ;; (powerline-evil-vim-color-theme)
   ;; (powerline-default-theme)

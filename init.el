@@ -50,8 +50,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("3d88e73a96e18dd7c9c4cb7aa2cc1cd166efc52931fc914e34e9f142495891eb" default))
  '(frame-background-mode 'dark)
  '(highlight-parentheses-colors '("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900"))
  '(magit-pull-arguments nil)

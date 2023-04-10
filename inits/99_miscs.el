@@ -2,13 +2,13 @@
 (use-package parseedn)
 (use-package uniquify
   :straight nil
-  :config
+  :init
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
   (setq uniquify-ignore-buffers-re "*[^*]+*"))
 
 ;;; recentf
 (use-package recentf-ext
-  :config
+  :init
   (setq recentf-max-saved-items 2000)
   (setq recentf-exclude '("recentf"))
   (setq recentf-auto-cleanup 60)
@@ -40,7 +40,7 @@
 
 ;; https://github.com/emacs-jp/emacs-jp.github.com/issues/38
 (use-package hl-line+
-  :config
+  :init
   (toggle-hl-line-when-idle)
   (setq hl-line-idle-interval 3)
   )
