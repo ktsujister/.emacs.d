@@ -1,6 +1,4 @@
 (use-package company
-  :init
-  (global-company-mode)
   :bind
   (:map company-active-map
 	("M-n" . nil)
@@ -10,7 +8,8 @@
 	("C-h" . nil)
 	("C-c y /" . company-yasnippet)
 	)
-  :config
+  :init
+  (global-company-mode)
   (setq company-selection-wrap-around t
 	completion-ignore-case t)
   (add-to-list 'company-backends 'company-yasnippet)

@@ -3,7 +3,7 @@
 
 (use-package tree-sitter
   :requires tree-sitter-langs
-  :config
+  :init
   (global-tree-sitter-mode)
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode)
 
@@ -16,7 +16,7 @@
 	     :type git :host github :repo "meain/evil-textobj-tree-sitter" :files (:defaults "queries"))
 
   :requires (evil tree-sitter)
-  :config
+  :init
   ;; bind `function.outer`(entire function block) to `f` for use in things like `vaf`, `yaf`
   (define-key evil-outer-text-objects-map "f" (evil-textobj-tree-sitter-get-textobj "function.outer"))
   ;; bind `function.inner`(function block without name and args) to `f` for use in things like `vif`, `yif`

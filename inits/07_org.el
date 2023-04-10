@@ -4,7 +4,6 @@
   :init
   (setq tab-width 4)
   (setq show-trailing-whitespace t)
-  :config
   (setq org-agenda-include-diary t)
   (setq org-log-done t)
   ;; Stop org-mode from highjacking shift-cursor keys
