@@ -26,8 +26,10 @@
     ;; insert state
     (add-to-list 'evil-insert-state-modes 'cider-repl-mode)
     ;; turn on evil-mode
-    (evil-mode 1))
-  )
+    (evil-mode 1)
+
+    ;; (evil-set-initial-state 'calendar-mode 'emacs)
+    ))
 
 (use-package evil-numbers
   :requires evil
@@ -36,3 +38,11 @@
 	("C-c +" . evil-numbers/inc-at-pt)
 	("C-c -" . evil-numbers/dec-at-pt))
   )
+
+;; https://github.com/emacs-evil/evil-collection
+(use-package evil-collection
+  :after evil
+  :ensure t
+  :custom (evil-collection-calendar-want-org-bindings t)
+  :config
+  (evil-collection-init))
