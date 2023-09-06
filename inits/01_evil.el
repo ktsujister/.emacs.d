@@ -15,7 +15,7 @@
   (progn
     ;; emacs state
     (dolist (mode '(calendar-mode
-		    ;; dired-mode
+		    dired-mode
 		    magit-mode
 		    mew-draft-mode
 		    mew-message-mode
@@ -46,4 +46,6 @@
   :ensure t
   :custom (evil-collection-calendar-want-org-bindings t)
   :config
-  (evil-collection-init))
+  ;; (evil-collection-init)
+  (evil-collection-init '(calendar calc ediff eshell org flycheck flymake))
+  )
