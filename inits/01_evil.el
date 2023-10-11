@@ -37,8 +37,7 @@
   :bind
   (:map evil-normal-state-map
 	("C-c +" . evil-numbers/inc-at-pt)
-	("C-c -" . evil-numbers/dec-at-pt))
-  )
+	("C-c -" . evil-numbers/dec-at-pt)))
 
 ;; https://github.com/emacs-evil/evil-collection
 (use-package evil-collection
@@ -47,5 +46,4 @@
   :custom (evil-collection-calendar-want-org-bindings t)
   :config
   ;; (evil-collection-init)
-  (evil-collection-init '(calendar calc ediff eshell org flycheck flymake))
-  )
+  (evil-collection-init '(calendar calc ediff eshell org flycheck flymake)))
