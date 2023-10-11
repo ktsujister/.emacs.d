@@ -13,7 +13,8 @@
 
 (use-package evil-textobj-tree-sitter
   :straight (evil-textobj-tree-sitter
-	     :type git :host github :repo "meain/evil-textobj-tree-sitter" :files (:defaults "queries"))
+	     :type git :host github :repo "meain/evil-textobj-tree-sitter"
+	     :files (:defaults "queries" "treesit-queries"))
 
   :requires (evil tree-sitter)
   :init
@@ -28,6 +29,6 @@
   (define-key evil-inner-text-objects-map "b" (evil-textobj-tree-sitter-get-textobj "block.inner"))
   )
 
-;; (use-package tree-sitter-fold
-;;   :straight (tree-sitter-fold :type git :host github :repo "junyi-hou/tree-sitter-fold")
-;;   :requires tree-sitter)
+(use-package ts-fold
+  :straight (ts-fold
+	     :type git :host github :repo "emacs-tree-sitter/ts-fold"))
