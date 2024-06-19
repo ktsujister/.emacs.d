@@ -2,12 +2,12 @@
   :ensure t)
 (use-package powerline-evil
   :after powerline
-  :init
-  (powerline-evil-center-color-theme)
+  ;; :init
+  ;; ;; (powerline-evil-center-color-theme)
   ;; (powerline-evil-vim-color-theme)
-  ;; (powerline-default-theme)
-  ;; (powerline-center-evil-theme)
-  ;; (powerline-vim-theme)
+  ;; ;; (powerline-default-theme)
+  ;; ;; (powerline-center-evil-theme)
+  ;; ;; (powerline-vim-theme)
   :custom-face
   (powerline-evil-base-face    ((t (:background "black" :inherit mode-line))))
   (powerline-evil-emacs-face   ((t (:background "black" :foreground "violet"  :inherit powerline-evil-base-face))))
