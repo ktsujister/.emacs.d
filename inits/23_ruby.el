@@ -1,5 +1,9 @@
 ;;; ruby-mode
 
+(use-package rbenv
+  :ensure t
+  :config (global-rbenv-mode))
+
 (setq auto-mode-alist
       (append '(("\\.ruby$" . ruby-mode)) auto-mode-alist))
 
