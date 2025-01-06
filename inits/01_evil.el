@@ -1,5 +1,4 @@
 ;; (el-get-bundle evil :build (("make")) :info nil)
-;; (el-get-bundle evil-numbers)
 
 (use-package evil
   :init
