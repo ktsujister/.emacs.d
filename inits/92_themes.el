@@ -4,5 +4,5 @@
   :defer t
   ;; :load-path "straight/build/color-theme-solarized"
   :init
-  (setq solarized-termcolors 256)
+  ;; (setq solarized-termcolors 256)
   (load-theme 'solarized t))
