@@ -5,6 +5,7 @@
   (setq indent-tabs-mode nil)
   (setq indent-level 4)
   (setq tab-width 4)
+  (setq eldoc-idle-delay 1)
   ;; (setq elpy-rpc-backend "jedi")
   (setq elpy-rpc-virtualenv-path 'current)
   (setq indent-tabs-mode nil)
