@@ -27,6 +27,6 @@
 (defalias 'cji 'cider-jack-in)
 (defalias 'qr 'quickrun)
 (defalias 'cb 'comment-box)
-
+(defalias 'epls  'eval-print-last-sexp)
 
 (provide 'setup-key-bindings)
