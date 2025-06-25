@@ -8,7 +8,7 @@
   ;; (setq elpy-rpc-backend "jedi")
   (setq elpy-rpc-virtualenv-path 'current)
   (setq indent-tabs-mode nil)
-  (remove-hook 'elpy-modules 'elpy-module-highlight-indentation)
+  ;; (remove-hook 'elpy-modules 'elpy-module-highlight-indentation)
   (when (load "flycheck" t t)
     (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
     (add-hook 'elpy-mode-hook 'flycheck-mode))
