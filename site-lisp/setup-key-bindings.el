@@ -28,5 +28,6 @@
 (defalias 'qr 'quickrun)
 (defalias 'cb 'comment-box)
 (defalias 'epls  'eval-print-last-sexp)
+(defalias 'bum 'browse-url-default-macosx-browser)
 
 (provide 'setup-key-bindings)
