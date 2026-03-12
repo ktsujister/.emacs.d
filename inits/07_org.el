@@ -1,6 +1,8 @@
 (use-package org
   :straight nil
   :mode (("\\.org$" . org-mode))
+  :bind (:map org-mode-map
+	      ("C-c C-x L" . org-toggle-link-display))
   :init
   (setq tab-width 4)
   (setq show-trailing-whitespace t)
@@ -39,7 +41,6 @@
      (ruby . t)
      (java . t)
      (R . t)))
-
 
   (global-set-key (kbd "C-c c") 'org-capture)
   (setq org-directory "~/memo/")
